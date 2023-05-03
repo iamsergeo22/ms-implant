@@ -72,7 +72,7 @@ GUIDÉ</h1>
     <span
       class="lg:tw-w-1/2 tw-transform tw--translate-y-10 tw-bottom-0 tw-left-0 tw-block md:tw-left-20 -tw-bottom-10 tw-mb-4">
       <h1
-        class="tw-mx-1 md:tw-mx-4 tw-bg-white md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-400 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-blue-900 tw-p-4 tw-rounded">
+        class="tw-mx-1 md:tw-mx-4 tw-bg-white md:tw-px-4 lg:tw-px-4 tw-shadow-2xl tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-blue-900 tw-p-4 tw-rounded">
         A Propos de Nous</h1>
     </span>
 
@@ -114,24 +114,100 @@ GUIDÉ</h1>
     </section>
 
 
-    <section class="tw-bg-gray-200 tw-p-12">
+    <section class="tw-bg-gray-300 tw-p-12">
       <span
-      class="lg:tw-w-1/2 tw-justify-center tw-transform tw--translate-y-20 lg:tw-mx-64 tw-bottom-0 tw-left-0 tw-block md:tw-left-20">
-      <h1
-        class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-400 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded">
-        Nos Produits</h1>
-    </span>
-      
+        class="lg:tw-w-1/2 tw-justify-center tw-transform tw--translate-y-20 lg:tw-mx-64 tw-bottom-0 tw-left-0 tw-block md:tw-left-20">
+        <h1
+          class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-2xl tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded">
+          Nos Produits</h1>
+      </span>
+
+      <v-row>
+        <v-col cols="12" md="6" lg="3">
+          <v-card class="tw-shadow-2xl hover:tw-shadow-blue-600 hover: tw-rounded-lg">
+            <v-img class="tw-rounded-t-lg"
+              src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+              aspect-ratio="1"></v-img>
+            <v-card-title class="tw-font-bold tw-text-lg">
+              <h2>Protese</h2>
+            </v-card-title>
+
+            <v-card-text class="tw-text-sm">
+              <p>Some Description here</p>
+            </v-card-text>
+
+          </v-card>
+        </v-col>
+        <v-col cols="12" md="6" lg="3">
+          <v-card class="tw-shadow-2xl hover:tw-shadow-blue-600 hover: tw-rounded-lg">
+            <v-img class="tw-rounded-t-lg"
+              src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+              aspect-ratio="1"></v-img>
+            <v-card-title class="tw-font-bold tw-text-lg">
+              <h2>Protese</h2>
+            </v-card-title>
+
+            <v-card-text class="tw-text-sm">
+              <p>Some Description here</p>
+            </v-card-text>
+
+
+          </v-card>
+        </v-col>
+        <v-col cols="12" md="6" lg="3">
+          <v-card class="tw-shadow-2xl hover:tw-shadow-blue-600 hover: tw-rounded-lg">
+            <v-img class="tw-rounded-t-lg"
+              src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+              aspect-ratio="1"></v-img>
+            <v-card-title class="tw-font-bold tw-text-lg">
+              <h2>Protese</h2>
+            </v-card-title>
+
+            <v-card-text class="tw-text-sm">
+              <p>Some Description here</p>
+            </v-card-text>
+
+
+
+          </v-card>
+        </v-col>
+        <v-col cols="12" md="6" lg="3">
+          <v-card class="tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-3xl tw-rounded-lg">
+            <v-img class="tw-rounded-t-lg"
+              src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+              aspect-ratio="1"></v-img>
+            <v-card-title class="tw-font-bold tw-text-lg">
+              <h2>Protese</h2>
+            </v-card-title>
+
+            <v-card-text class="tw-text-sm">
+              <p>Some Description here</p>
+            </v-card-text>
+
+
+          </v-card>
+        </v-col>
+      </v-row>
+
+
+    </section>
+
+
+    <section class="tw-p-12">
+      <v-container>
+        <span class="lg:tw-w-1/2 tw-justify-center tw-mb-8 lg:tw-mx-64 tw-block md:tw-left-20">
+          <h1
+            class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-2xl tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded">
+            Gallery</h1>
+        </span>
+
         <v-row>
           <v-col cols="12" md="6" lg="3">
             <v-card class="tw-shadow-md tw-rounded-lg">
               <v-img class="tw-rounded-t-lg"
                 src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
                 aspect-ratio="1"></v-img>
-              <v-card-title class="tw-font-bold tw-text-lg">
-                <h2>Protese</h2>
-              </v-card-title>
-                     
+
             </v-card>
           </v-col>
           <v-col cols="12" md="6" lg="3">
@@ -139,11 +215,7 @@ GUIDÉ</h1>
               <v-img class="tw-rounded-t-lg"
                 src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
                 aspect-ratio="1"></v-img>
-              <v-card-title class="tw-font-bold tw-text-lg">
-                <h2>Protese</h2>
-              </v-card-title>
 
-             
             </v-card>
           </v-col>
           <v-col cols="12" md="6" lg="3">
@@ -151,11 +223,7 @@ GUIDÉ</h1>
               <v-img class="tw-rounded-t-lg"
                 src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
                 aspect-ratio="1"></v-img>
-              <v-card-title class="tw-font-bold tw-text-lg">
-                <h2>Protese</h2>
-              </v-card-title>
 
-             
             </v-card>
           </v-col>
           <v-col cols="12" md="6" lg="3">
@@ -163,16 +231,113 @@ GUIDÉ</h1>
               <v-img class="tw-rounded-t-lg"
                 src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
                 aspect-ratio="1"></v-img>
-              <v-card-title class="tw-font-bold tw-text-lg">
-                <h2>Protese</h2>
-              </v-card-title>
 
-             
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="6" lg="3">
+            <v-card class="tw-shadow-md tw-rounded-lg">
+              <v-img class="tw-rounded-t-lg"
+                src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+                aspect-ratio="1"></v-img>
+
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="6" lg="3">
+            <v-card class="tw-shadow-md tw-rounded-lg">
+              <v-img class="tw-rounded-t-lg"
+                src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+                aspect-ratio="1"></v-img>
+
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="6" lg="3">
+            <v-card class="tw-shadow-md tw-rounded-lg">
+              <v-img class="tw-rounded-t-lg"
+                src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+                aspect-ratio="1"></v-img>
+
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="6" lg="3">
+            <v-card class="tw-shadow-md tw-rounded-lg">
+              <v-img class="tw-rounded-t-lg"
+                src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+                aspect-ratio="1"></v-img>
+
             </v-card>
           </v-col>
         </v-row>
-     
+      </v-container>
+    </section>
 
+
+    <section class="tw-bg-gray-300 tw-p-6">
+      <v-container>
+        <span class="lg:tw-w-1/2 tw-justify-center tw-mb-8 lg:tw-mx-64 tw-block md:tw-left-20">
+          <h1
+            class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-2xl tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded">
+            Blog</h1>
+        </span>
+        <v-row>
+          <v-col :key="index" cols="12" md="6" lg="4">
+            <v-card>
+              <v-img
+                src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+                aspect-ratio="1.5"></v-img>
+              <v-card-title>
+                <h2 class="tw-text-md tw-text-blue-600 tw-font-extrabold">Introduction to Ms Implant</h2>
+              </v-card-title>
+              <v-card-subtitle>
+                <p class="tw-shadow-2xl tw-rounded tw-bg-gray-200 tw-p-2 tw-w-1/3">22/10/2023</p>
+              </v-card-subtitle>
+              <v-card-text>
+                <p>Some Description Here</p>
+              </v-card-text>
+              <v-card-actions>
+                <v-btn color="primary" text>Read More</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+          <v-col :key="index" cols="12" md="6" lg="4">
+            <v-card>
+              <v-img
+                src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+                aspect-ratio="1.5"></v-img>
+              <v-card-title>
+                <h2 class="tw-text-md tw-text-blue-600 tw-font-extrabold">Introduction to Ms Implant</h2>
+              </v-card-title>
+              <v-card-subtitle>
+                <p class="tw-shadow-2xl tw-rounded tw-bg-gray-200 tw-p-2 tw-w-1/3">22/10/2023</p>
+              </v-card-subtitle>
+              <v-card-text>
+                <p>Some Description Here</p>
+              </v-card-text>
+              <v-card-actions>
+                <v-btn color="primary" text>Read More</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+          <v-col :key="index" cols="12" md="6" lg="4">
+            <v-card>
+              <v-img
+                src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+                aspect-ratio="1.5"></v-img>
+              <v-card-title>
+                <h2 class="tw-text-md tw-text-blue-600 tw-font-extrabold">Introduction to Ms Implant</h2>
+              </v-card-title>
+              <v-card-subtitle>
+                <p class="tw-shadow-2xl tw-rounded tw-bg-gray-200 tw-p-2 tw-w-1/3">22/10/2023</p>
+              </v-card-subtitle>
+              <v-card-text>
+                <p>Some Description Here</p>
+              </v-card-text>
+              <v-card-actions>
+                <v-btn color="primary" text>Read More</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
     </section>
 
   </div>
