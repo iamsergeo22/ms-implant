@@ -105,8 +105,9 @@ GUIDÉ</h1>
 
           </p>
           <button
+            @click="$router.push('/about')"
             class="tw-bg-blue-700 tw-mb-4 hover:tw-bg-blue-800 tw-text-white tw-font-bold tw-px-4 tw-mt-4 xl:tw-px-6 tw-py-2 xl:tw-py-3 tw-rounded">Voir
-            PLus</button>
+            Plus</button>
 
         </div>
 
@@ -114,7 +115,7 @@ GUIDÉ</h1>
     </section>
 
 
-    <section class="tw-bg-gray-300 lg:tw-p-12 tw-p-8">
+    <section class="tw-bg-gray-300 lg:tw-p-12 tw-pb-12 tw-px-8 tw-py-8 tw-mb-4">
       <span
         class="lg:tw-w-1/2 tw-justify-center tw-transform tw--translate-y-20 lg:tw-mx-78 tw-bottom-0 tw-left-0 tw-block md:tw-left-20">
         <h1
