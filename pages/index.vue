@@ -78,7 +78,7 @@ GUIDÉ</h1>
 
 
     <section
-      class="tw-py-4 tw-px-4 lg:tw-mb-24 tw-mb-12 tw-mx-12 lg:tw-px-desktop lg:tw-mx-desktop tw-bg-[#fff] tw-rounded-2xl tw-justify-center">
+      class="tw-py-4 lg:tw-px-4 lg:tw-mb-24 tw-mb-12 lg:tw-mx-12 tw-mx-8 lg:tw-px-desktop lg:tw-mx-desktop tw-bg-[#fff] tw-rounded-2xl tw-justify-center">
       <div class="tw-flex tw-flex-col tw-flex-col-reverse lg:tw-flex-row lg:tw-gap-12">
         <div class="tw-flex tw-items-center tw-justify-evenly tw-basis-1/2">
 
@@ -114,7 +114,7 @@ GUIDÉ</h1>
     </section>
 
 
-    <section class="tw-bg-gray-300 tw-p-12">
+    <section class="tw-bg-gray-300 lg:tw-p-12 tw-p-8">
       <span
         class="lg:tw-w-1/2 tw-justify-center tw-transform tw--translate-y-20 lg:tw-mx-78 tw-bottom-0 tw-left-0 tw-block md:tw-left-20">
         <h1
@@ -193,7 +193,7 @@ GUIDÉ</h1>
     </section>
 
 
-    <section class="tw-p-12">
+    <section class="lg:tw-p-12 tw-p-8">
       
         <span class="lg:tw-w-1/2 tw-justify-center tw-mb-8 tw-transform tw--translate-y-20 lg:tw-mx-78 tw-bottom-0 tw-left-0 tw-block md:tw-left-20">
           <h1

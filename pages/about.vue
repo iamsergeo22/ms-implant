@@ -16,7 +16,7 @@
             class="tw-mt-12 tw-mb-6 tw-text-xl tw-text-center lg:tw-text-2xl tw-font-bold tw-uppercase tw-font-extrabold tw-text-blue-600">
             About Us
           </h1>      </div>
-      <div class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-4 lg:tw-container lg:tw-p-8 lg:tw-justify-center tw-items-center tw-w-full">
+      <div class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-4 lg:tw-container lg:tw-p-8 tw-p-4 lg:tw-justify-center tw-items-center tw-w-full">
         <!-- History -->
         <div class="tw-flex tw-shadow-2xl tw-rounded-lg tw-bg-white tw-block tw-p-6  tw-cursor-pointer tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
           <div class="tw-bg-blue-600 tw-rounded-full tw-p-3 tw-mb-2">
@@ -51,7 +51,7 @@
     </div>
 
 
-    <section class="lg:tw-pb-10 lg:tw-px-3 tw-flex-col tw-gap-4 tw-mt-8">
+    <section class="lg:tw-pb-10 lg:tw-px-3 tw-p-4 tw-flex-col tw-gap-4 tw-mt-8">
       <div class="tw-w-full">
         <div class="tw-flex tw-flex-col tw-mb-6 tw-px-2 md:tw-px-6 lg:tw-px-10 tw-w-full">
           
@@ -126,7 +126,7 @@
       <h1 class="tw-text-blue-600 tw-text-center tw-text-2xl">Qui Sommes Nous?</h1>
       <p class="tw-text-center tw-text-gray-800 tw-text-md tw-lowercase">UNE SOCIÉTÉ RÉCENTE, UNE EXPÉRIENCE PROBANTE EVOLUTIS</p>
       <div class="tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center tw-mt-4">
-        <div class="tw-w-3/4 tw-h-72 tw-relative tw-pt-56">
+        <div class="lg:tw-w-3/4 tw-w-full tw-h-72 tw-relative lg:tw-pt-56">
       <iframe class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-shadow-2xl tw-rounded" src="https://www.youtube.com/embed/jh5U5BnpGN8" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>

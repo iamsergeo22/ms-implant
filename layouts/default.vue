@@ -1,53 +1,50 @@
 <template>
   <div class="font-sans tw-flex tw-flex-col tw-opacit-90">
     <header>
-      <nav
-        class="tw-shadow-lg tw-mx-auto tw-flex tw-flex-wrap tw-gap-4 tw-px-8 tw-lg:justify-evenly tw-justify-between tw-items-center tw-py-6">
-        <div>
-          <nuxt-link v-if="theme === 'theme-light'" to="/">
-            <h1 class="tw-text-2xl tw-font-extrabold tw-text-blue-600">
-              ms-implant.
-            </h1>
-          </nuxt-link>
-          <nuxt-link v-else to="/">
-            <h1 class="tw-text-2xl tw-font-extrabold  tw-text-blue-600">
-              ms-implant. </h1>
-          </nuxt-link>
-        </div>
-        <div class="tw-block lg:tw-hidden">
-          <button @click="toggle"
-            class="tw-flex tw-items-center tw-px-3 tw-py-2 border tw-rounded tw-border-gray-500 hover:tw-text-gray-600 hover:tw-border-gray-600">
-            <svg class="tw-current-color tw-h-3 tw-w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" /></svg>
-          </button>
-        </div>
-        <ul
-          class="tw-tracking-wide tw-font-bold tw-w-full tw-block tw-flex-grow lg:tw-space-x-8 tw-space-y-6 lg:tw-space-y-0 lg:tw-flex lg:tw-flex-initial lg:tw-w-auto tw-items-center tw-mt-8 lg:tw-mt-0"
-          :class="isOpen ? 'tw-block': 'tw-hidden'">
-          <li class="tw-mb-6 lg:tw-mb-0">
-            <!-- <search-input /> -->
-          </li>
+    <nav class="tw-shadow-lg tw-mx-auto tw-flex tw-flex-wrap tw-gap-4 tw-px-8 tw-lg:justify-evenly tw-justify-between tw-items-center tw-py-6">
+      <div>
+        <nuxt-link v-if="theme === 'theme-light'" to="/">
+          <h1 class="tw-text-2xl tw-font-extrabold tw-text-blue-600">
+            ms-implant.
+          </h1>
+        </nuxt-link>
+        <nuxt-link v-else to="/">
+          <h1 class="tw-text-2xl tw-font-extrabold  tw-text-blue-600">
+            ms-implant. </h1>
+        </nuxt-link>
+      </div>
+      <div class="tw-block lg:tw-hidden">
+        <button @click="toggleMenu"
+          class="tw-flex tw-items-center tw-px-3 tw-py-2 border tw-rounded tw-border-gray-500 hover:tw-text-gray-600 hover:tw-border-gray-600">
+          <svg class="tw-current-color tw-h-3 tw-w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" /></svg>
+        </button>
+      </div>
+      <ul class="tw-tracking-wide tw-font-bold tw-w-full tw-block tw-flex-grow lg:tw-space-x-8 tw-space-y-6 lg:tw-space-y-0 lg:tw-flex lg:tw-flex-initial lg:tw-w-auto tw-items-center tw-mt-8 lg:tw-mt-0" :class="{ 'tw-block': isOpen, 'tw-hidden': !isOpen }">
+        <li class="tw-mb-6 lg:tw-mb-0">
+          <!-- <search-input /> -->
+        </li>
 
-          <li>
-            <nuxt-link to="/" class="tw-text-black hover:tw-text-blue-300 tw-text-xl">Home</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/product" class="tw-text-black hover:tw-text-blue-300 tw-text-xl">Products</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/about" class="tw-text-black hover:tw-text-blue-300 tw-text-xl">About Us</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/blog" class="tw-text-black hover:tw-text-blue-300 tw-text-xl">News</nuxt-link>
-          </li>
+        <li @click="closeMenu">
+          <nuxt-link to="/" class="tw-text-black hover:tw-text-blue-300 tw-text-xl">Home</nuxt-link>
+        </li>
+        <li @click="closeMenu">
+          <nuxt-link to="/product" class="tw-text-black hover:tw-text-blue-300 tw-text-xl">Products</nuxt-link>
+        </li>
+        <li @click="closeMenu">
+          <nuxt-link to="/about" class="tw-text-black hover:tw-text-blue-300 tw-text-xl">About Us</nuxt-link>
+        </li>
+        <li @click="closeMenu">
+          <nuxt-link to="/blog" class="tw-text-black hover:tw-text-blue-300 tw-text-xl">News</nuxt-link>
+        </li>
 
-          <li>
-            <nuxt-link to="/contact" class="tw-text-black hover:tw-text-blue-300 tw-text-xl">Contact</nuxt-link>
-          </li>
+        <li @click="closeMenu">
+          <nuxt-link to="/contact" class="tw-text-black hover:tw-text-blue-300 tw-text-xl">Contact</nuxt-link>
+        </li>
 
-        </ul>
-      </nav>
-    </header>
+      </ul>
+    </nav>
+  </header>
 
     <div class="tw-flex-grow">
       <Nuxt />
@@ -81,16 +78,16 @@
           <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Links</h3>
           <ul class="tw-list-disc tw-list-inside tw-text-gray-400 tw-leading-6">
             <li>
-              <a href="#" class="tw-text-white">Home</a>
+              <a href="/" class="tw-text-white">Home</a>
             </li>
             <li>
-              <a href="#" class="tw-text-white">Products</a>
+              <a href="/product" class="tw-text-white">Products</a>
             </li>
             <li>
-              <a href="#" class="tw-text-white">About Us</a>
+              <a href="/about" class="tw-text-white">About Us</a>
             </li>
             <li>
-              <a href="#" class="tw-text-white">Contact Us</a>
+              <a href="/contact" class="tw-text-white">Contact Us</a>
             </li>
           </ul>
         </v-col>
@@ -175,11 +172,19 @@
 
     },
     data() {
-      return {
-        isOpen: false,
-
-      }
+    return {
+      isOpen: false,
+      theme: 'theme-light'
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isOpen = !this.isOpen;
     },
+    closeMenu() {
+      this.isOpen = false;
+    }
+  }
 
   }
 
