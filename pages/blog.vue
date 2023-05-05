@@ -26,7 +26,7 @@
         </v-col>
         <v-col cols="12" md="4">
           <v-card>
-            <v-card-title class="tw-text-lg tw-font-medium tw-text-center">Categories</v-card-title>
+            <v-card-title class="tw-text-lg tw-font-extrabold tw-text-blue-600 tw-text-center">Categories</v-card-title>
             <v-card-text>
               <v-list class="tw-py-0">
                 <v-list-item-group v-model="selectedCategory">
@@ -40,7 +40,7 @@
 
           <v-card class="tw-mt-4">
             <v-card-text>
-              <p class="tw-text-gray-600 tw-font-bold tw-mt-4">Recent Posts</p>
+              <p class="tw-font-extrabold tw-text-blue-600 tw-mt-4 tw-text-lg">Recent Posts</p>
               <v-list>
                 <v-list-item
                   v-for="(recentPost, index) in recentPosts"
