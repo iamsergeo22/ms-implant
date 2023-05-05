@@ -127,6 +127,11 @@
 
 <script>
   export default {
+    head() {
+    return {
+      title: 'Products Page',
+      
+    }},
     computed: {
     breadcrumbItems() {
       const items = [

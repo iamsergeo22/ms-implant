@@ -136,6 +136,12 @@
         }
       },
 
+      head() {
+    return {
+      title: 'Contact Us Page',
+      
+    }},
+
       computed: {
     breadcrumbItems() {
       const items = [

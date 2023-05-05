@@ -134,6 +134,12 @@
       }
     },
 
+    head() {
+    return {
+      title: 'News Page',
+      
+    }},
+
     computed: {
     breadcrumbItems() {
       const items = [

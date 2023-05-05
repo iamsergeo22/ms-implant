@@ -348,7 +348,14 @@ GUIDÉ</h1>
 
 <script>
   export default {
-    name: 'IndexPage'
+    name: 'IndexPage',
+
+    head() {
+    return {
+      title: 'Welcome to Ms implant',
+      
+    }
+  }
   }
 
 </script>
