@@ -6,6 +6,18 @@
       <h1 class="tw-text-4xl tw-font-bold tw-text-white">Nos Produits</h1>
     </div>
   </div>
+
+  <div class="tw-flex tw-items-center tw-space-x-2 tw-px-8">
+    <v-breadcrumbs
+      :items="breadcrumbItems"
+      divider="/"
+      class="tw-text-lg tw-font-extrabold"
+    ></v-breadcrumbs>
+  </div>
+
+
+  <div class="tw-bg-gray-200 tw-pt-4">
+
     <section class="tw-pt-4 tw-pb-8 lg:tw-pb-10 lg:tw-px-3 tw-p-4 tw-flex-col tw-gap-4 tw-mt-8">
       <div class="tw-w-full">
         <div class="tw-flex tw-flex-col tw-mb-6 tw-px-2 md:tw-px-6 lg:tw-px-10 tw-w-full">
@@ -105,6 +117,8 @@
         </div>
       </div>
     </section>
+
+    </div>
   </div>
 
 
@@ -113,7 +127,26 @@
 
 <script>
   export default {
+    computed: {
+    breadcrumbItems() {
+      const items = [
+        {
+          text: 'Home',
+          href: '/',
+        },
+        {
+          text: 'Products',
+          
+        },
+        
+      ];
 
+      return items.map((item) => ({
+        ...item,
+        disabled: !item.href,
+      }));
+    },
+  },
   }
 
 </script>

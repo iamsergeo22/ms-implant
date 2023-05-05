@@ -6,7 +6,14 @@
       <h1 class="tw-text-4xl tw-font-bold tw-text-white">About Us</h1>
     </div>
   </div>
- 
+  <div class="tw-flex tw-items-center tw-space-x-2 tw-px-8">
+    <v-breadcrumbs
+      :items="breadcrumbItems"
+      divider="/"
+      class="tw-text-lg tw-font-extrabold"
+    ></v-breadcrumbs>
+  </div>
+
   <div class="tw-flex tw-flex-col tw-bg-gray-200 tw-justify-center tw-items-center">
 
     <!-- Section: About Us -->
@@ -136,3 +143,29 @@
 </div>
 </div>
 </template>
+
+
+<script>
+export default {
+  computed: {
+    breadcrumbItems() {
+      const items = [
+        {
+          text: 'Home',
+          href: '/',
+        },
+        {
+          text: 'About Us',
+          
+        },
+        
+      ];
+
+      return items.map((item) => ({
+        ...item,
+        disabled: !item.href,
+      }));
+    },
+  },
+}
+</script>
