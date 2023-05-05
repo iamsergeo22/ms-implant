@@ -106,7 +106,7 @@ GUIDÉ</h1>
           </p>
           <button
             @click="$router.push('/about')"
-            class="tw-bg-blue-700 tw-mb-4 hover:tw-bg-blue-800 tw-text-white tw-font-bold tw-px-4 tw-mt-4 xl:tw-px-6 tw-py-2 xl:tw-py-3 tw-rounded">Voir
+            class="tw-bg-blue-900 tw-mb-4 hover:tw-bg-blue-800 tw-text-white tw-font-bold tw-px-4 tw-mt-4 xl:tw-px-6 tw-py-2 xl:tw-py-3 tw-rounded-xl">Voir
             Plus</button>
 
         </div>
