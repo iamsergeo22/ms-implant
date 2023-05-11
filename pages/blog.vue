@@ -41,31 +41,28 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="4">
-        <v-card>
-          <v-card-title class="tw-text-lg tw-font-extrabold tw-text-blue-600 tw-text-center">Categories</v-card-title>
+      
+        <v-card class="tw-mt-4">
+          <p class="tw-font-extrabold tw-text-blue-600 tw-mt-4 tw-text-2xl tw-px-8">Recent Posts</p>
+
           <v-card-text>
-            <v-list class="tw-py-0">
-              <v-list-item-group v-model="selectedCategory">
-                <v-list-item v-for="(category, index) in categories" :key="index" :value="category">
-                  <v-list-item-title>{{ category }}</v-list-item-title>
-                </v-list-item>
-              </v-list-item-group>
+            <v-list>
+              <v-list-item v-for="(recentPost, index) in recentPosts" :key="index">
+                <v-list-item-content>
+                  <v-img :src="recentPost.feature_image" height="150px" class="tw-rounded-lg tw-shadow-2xl"></v-img>
+                  <v-list-item-title class="tw-mt-3 tw-text-2xl tw-font-extrabold tw-text-blue-600">{{ recentPost.title }}</v-list-item-title>
+                  <v-list-item-subtitle class="tw-mt-3 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ recentPost.date }}</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
             </v-list>
           </v-card-text>
         </v-card>
 
         <v-card class="tw-mt-4">
-          <v-card-text>
-            <p class="tw-font-extrabold tw-text-blue-600 tw-mt-4 tw-text-lg">Recent Posts</p>
-            <v-list>
-              <v-list-item v-for="(recentPost, index) in recentPosts" :key="index" :to="`/blog/${recentPost.slug}`">
-                <v-list-item-content>
-                  <v-list-item-title>{{ recentPost.title }}</v-list-item-title>
-                  <v-list-item-subtitle>{{ recentPost.date }}</v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list>
-          </v-card-text>
+          <v-img class="tw-rounded-lg tw-shadow-2xl"
+            src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
+            width="550px" height="800px"></v-img>
+
         </v-card>
 
         <v-card class="tw-mt-4">
@@ -86,7 +83,8 @@ import { getPosts } from '../api/posts';
     async asyncData () {
       const posts = await getPosts();
       console.log(posts)
-      return { posts: posts }
+      const recentPosts = posts.slice(0, 3)
+      return { posts: posts, recentPosts: recentPosts }
     },
     
     head() {
