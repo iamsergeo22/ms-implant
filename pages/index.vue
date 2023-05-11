@@ -290,11 +290,11 @@ GUIDÉ</h1>
           <v-col  md="4" lg="4" v-for="(post, index) in posts" :key="index" limit="2">
             
         <v-card class="tw-mb-6">
-          <v-img :src="post.feature_image" height="300px" class="tw-rounded-t-md"></v-img>
-          <v-card-title class="tw-mt-3 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ post.title }}</v-card-title>
-          
+          <v-img :src="post.feature_image" height="300px" class="tw-rounded-lg tw-shadow-2xl"></v-img>
+          <p class="tw-mt-4 tw-px-3 tw-text-xl tw-font-extrabold tw-text-blue-600">{{ post.title }}</p>
+          <v-list-item-subtitle class="tw-mt-2 tw-px-4 tw-text-lg tw-font-extrabold tw-text-blue-500">{{ new Date(post.created_at).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) }}</v-list-item-subtitle>
           <v-card-actions>
-            <nuxt-link :to="{ path: post.slug }">Read More</nuxt-link>
+            <nuxt-link class="tw-bg-blue-900 tw-mx-2 tw-mb-2 hover:tw-bg-blue-800 tw-text-white tw-font-bold tw-px-4 xl:tw-px-6 tw-py-2 xl:tw-py-3 tw-rounded-lg tw-shadow-2xl" :to="{ path: post.slug }">Read More</nuxt-link>
           </v-card-actions>
         </v-card>
       </v-col>

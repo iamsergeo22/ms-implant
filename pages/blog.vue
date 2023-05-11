@@ -31,13 +31,15 @@
     <v-row class="tw-p-6 tw-pt-3 tw-bg-gray-200">
       <v-col cols="12" md="8" class="">
         <v-card v-for="(post, index) in posts" :key="index" class="tw-mb-6">
-          <v-img :src="post.feature_image" height="500px" class="tw-rounded-t-md"></v-img>
-          <v-card-title class="tw-mt-3 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ post.title }}</v-card-title>
-          <v-card-text class="tw-mb-3">{{ post.date }}</v-card-text>
-          <v-card-text class="tw-mb-3">{{ post.excerpt }}</v-card-text>
+          <v-img :src="post.feature_image" height="400px" class="tw-rounded-lg tw-shadow-2xl"></v-img>
+          <p class="tw-mt-4 tw-px-3 tw-text-2xl tw-font-extrabold tw-text-blue-600">{{ post.title }}</p>
+          <v-list-item-subtitle class="tw-mt-2 tw-px-4 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ new Date(post.created_at).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) }}</v-list-item-subtitle>
+          <v-card-text class="tw-mb-2 tw-text-justify">{{ post.excerpt }}</v-card-text>
           <v-card-actions>
-            <nuxt-link :to="{ path: post.slug }">Read More</nuxt-link>
+            <nuxt-link class="tw-bg-blue-900 tw-mx-2 tw-mb-2 hover:tw-bg-blue-800 tw-text-white tw-font-bold tw-px-4 xl:tw-px-6 tw-py-2 xl:tw-py-3 tw-rounded-lg tw-shadow-2xl" :to="{ path: post.slug }">Read More</nuxt-link>
           </v-card-actions>
+        
+
         </v-card>
       </v-col>
       <v-col cols="12" md="4">
@@ -49,9 +51,11 @@
             <v-list>
               <v-list-item v-for="(recentPost, index) in recentPosts" :key="index">
                 <v-list-item-content>
-                  <v-img :src="recentPost.feature_image" height="150px" class="tw-rounded-lg tw-shadow-2xl"></v-img>
+                  <nuxt-link :to="{ path: recentPost.slug }">
+                    <v-img :src="recentPost.feature_image" height="150px" class="tw-rounded-lg tw-shadow-2xl"></v-img>
                   <v-list-item-title class="tw-mt-3 tw-text-2xl tw-font-extrabold tw-text-blue-600">{{ recentPost.title }}</v-list-item-title>
-                  <v-list-item-subtitle class="tw-mt-3 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ recentPost.date }}</v-list-item-subtitle>
+                  <v-list-item-subtitle class="tw-mt-3 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ new Date(recentPost.created_at).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) }}</v-list-item-subtitle>
+                  </nuxt-link>
                 </v-list-item-content>
               </v-list-item>
             </v-list>

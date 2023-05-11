@@ -15,7 +15,9 @@ app.post("/", (req, res) => {
         from: process.env.EMAIL_FROM, // Change to your verified sender
         subject: 'Message from ' + req.body.contact.name,
         html: `<div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
-          <p style="font-weight: bold;">Telephone:</p>
+        <p style="font-weight: bold;">Email:</p>
+        <p>${req.body.contact.email}</p>
+        <p style="font-weight: bold;">Telephone:</p>
           <p>${req.body.contact.phone}</p>
           <p style="font-weight: bold; ">Message:</p>
           <p>${req.body.contact.message}</p>
