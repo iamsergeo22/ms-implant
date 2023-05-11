@@ -3,15 +3,12 @@
     <header>
     <nav class="tw-shadow-lg tw-mx-auto tw-flex tw-flex-wrap tw-gap-4 tw-px-8 tw-lg:justify-evenly tw-justify-between tw-items-center tw-py-6">
       <div>
-        <nuxt-link v-if="theme === 'theme-light'" to="/">
-          <h1 class="tw-text-2xl tw-font-extrabold tw-text-blue-600">
+        <nuxt-link to="/">
+          <h1 class="tw-text-xl tw-font-extrabold tw-text-blue-600">
             ms-implant.
           </h1>
         </nuxt-link>
-        <nuxt-link v-else to="/">
-          <h1 class="tw-text-2xl tw-font-extrabold  tw-text-blue-600">
-            ms-implant. </h1>
-        </nuxt-link>
+        
       </div>
       <div class="tw-block lg:tw-hidden">
         <button @click="toggleMenu"
@@ -26,20 +23,20 @@
         </li>
 
         <li @click="closeMenu">
-          <nuxt-link to="/" class="tw-text-black tw-font-medium  hover:tw-text-blue-300 tw-text-xl">Home</nuxt-link>
+          <nuxt-link to="/" :class="$route.path === '/'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Home</nuxt-link>
         </li>
         <li @click="closeMenu">
-          <nuxt-link to="/product" class="tw-text-black tw-font-medium  hover:tw-text-blue-300 tw-text-xl">Products</nuxt-link>
+          <nuxt-link to="/product" :class="$route.path === '/product'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Products</nuxt-link>
         </li>
         <li @click="closeMenu">
-          <nuxt-link to="/about" class="tw-text-black tw-font-medium  hover:tw-text-blue-300 tw-text-xl">About Us</nuxt-link>
+          <nuxt-link to="/about" :class="$route.path === '/about'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">About Us</nuxt-link>
         </li>
         <li @click="closeMenu">
-          <nuxt-link to="/blog" class="tw-text-black tw-font-medium  hover:tw-text-blue-300 tw-text-xl">News</nuxt-link>
+          <nuxt-link to="/blog" :class="$route.path === '/blog'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">News</nuxt-link>
         </li>
 
         <li @click="closeMenu">
-          <nuxt-link to="/contact" class="tw-text-black tw-font-medium  hover:tw-text-blue-300 tw-text-xl">Contact Us</nuxt-link>
+          <nuxt-link to="/contact" :class="$route.path === '/contact'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Contact Us</nuxt-link>
         </li>
 
       </ul>

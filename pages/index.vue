@@ -88,25 +88,28 @@ GUIDÉ</h1>
 
         </div>
         <div class="tw-basis-1/2">
-          <p class="tw-font-extrabold tw-text-blue-900 tw-text-xl tw-font-bold lg:tw-text-left tw-uppercase tw-mb-2">
+          <p class="tw-font-extrabold tw-mx-4 tw-text-blue-900 tw-text-xl tw-font-bold lg:tw-text-left tw-uppercase tw-mb-2">
             A Propos de Nous</p>
 
-          <p class="tw-text-justify tw-text-md">Lorem ipsum dolor sit amet, consectetur adipiscing
+          <v-card-text class="tw-text-justify tw-text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Morbi quam faucibus nam lorem. Imperdiet a, nibh mauris nec nibh.
             Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
-            Suscipit urna tristique ornare
+            Suscipit urna tristique ornare.
 
-          </p>
-          <br>
-          <p class="tw-text-justify tw-text-md">
+            Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
+            Suscipit urna tristique ornare ipsum commodo viverra habitant.
+
+
+          </v-card-text>
+          <v-card-text class="tw-text-justify tw-text-xl">
             Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
             Suscipit urna tristique ornare ipsum commodo viverra habitant.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quam faucibus nam lorem. Imperdiet a, nibh
 
-          </p>
+          </v-card-text>
           <button
             @click="$router.push('/about')"
-            class="tw-bg-blue-900 tw-mb-4 hover:tw-bg-blue-800 tw-text-white tw-font-bold tw-px-4 tw-mt-4 xl:tw-px-6 tw-py-2 xl:tw-py-3 tw-rounded-lg tw-shadow-2xl">Voir
+            class="tw-bg-blue-900 tw-mx-4 tw-mb-4 hover:tw-bg-blue-800 tw-text-white tw-font-bold tw-px-4 tw-mt-4 xl:tw-px-6 tw-py-2 xl:tw-py-3 tw-rounded-lg tw-shadow-2xl">Voir
             Plus</button>
 
         </div>
@@ -134,7 +137,8 @@ GUIDÉ</h1>
             </v-card-title>
 
             <v-card-text class="tw-text-sm">
-              <p>Some Description here</p>
+              <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
+            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
             </v-card-text>
 
           </v-card>
@@ -149,7 +153,8 @@ GUIDÉ</h1>
             </v-card-title>
 
             <v-card-text class="tw-text-sm">
-              <p>Some Description here</p>
+              <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
+            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
             </v-card-text>
 
 
@@ -165,7 +170,8 @@ GUIDÉ</h1>
             </v-card-title>
 
             <v-card-text class="tw-text-sm">
-              <p>Some Description here</p>
+              <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
+            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
             </v-card-text>
 
 
@@ -182,7 +188,8 @@ GUIDÉ</h1>
             </v-card-title>
 
             <v-card-text class="tw-text-sm">
-              <p>Some Description here</p>
+              <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
+            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
             </v-card-text>
 
 
@@ -272,8 +279,8 @@ GUIDÉ</h1>
     </section>
 
 
-    <section class="tw-bg-gray-300 tw-p-6">
-      <v-container>
+    <section class="tw-bg-gray-300 lg:tw-p-12 tw-p-8">
+     
         <span class="lg:tw-w-1/2 tw-justify-center tw-mb-8 tw-transform tw--translate-y-20 lg:tw-mx-78 tw-bottom-0 tw-left-0 tw-block md:tw-left-20">
           <h1
             class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded">
@@ -292,10 +299,11 @@ GUIDÉ</h1>
                 <p class="tw-shadow-2xl tw-rounded tw-bg-gray-200 tw-p-2 tw-w-1/3">22/10/2023</p>
               </v-card-subtitle>
               <v-card-text>
-                <p>Some Description Here</p>
+                <p>Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
+            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
               </v-card-text>
               <v-card-actions>
-                <v-btn color="primary" text>Read More</v-btn>
+                <v-btn class="tw-bg-gray-200" color="primary" text>Read More</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -311,10 +319,11 @@ GUIDÉ</h1>
                 <p class="tw-shadow-2xl tw-rounded tw-bg-gray-200 tw-p-2 tw-w-1/3">22/10/2023</p>
               </v-card-subtitle>
               <v-card-text>
-                <p>Some Description Here</p>
+                <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
+            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
               </v-card-text>
               <v-card-actions>
-                <v-btn color="primary" text>Read More</v-btn>
+                <v-btn class="tw-bg-gray-200" color="primary" text>Read More</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -330,15 +339,16 @@ GUIDÉ</h1>
                 <p class="tw-shadow-2xl tw-rounded tw-bg-gray-200 tw-p-2 tw-w-1/3">22/10/2023</p>
               </v-card-subtitle>
               <v-card-text>
-                <p>Some Description Here</p>
+                <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
+            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
               </v-card-text>
               <v-card-actions>
-                <v-btn color="primary" text>Read More</v-btn>
+                <v-btn class="tw-bg-gray-200" color="primary" text>Read More</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
         </v-row>
-      </v-container>
+      
     </section>
 
   </div>
