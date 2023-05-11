@@ -31,11 +31,12 @@
     <v-row class="tw-p-6 tw-pt-3 tw-bg-gray-200">
       <v-col cols="12" md="8" class="">
         <v-card v-for="(post, index) in posts" :key="index" class="tw-mb-6">
-          <v-img :src="post.image" height="500px" class="tw-rounded-t-md"></v-img>
+          <v-img :src="post.feature_image" height="500px" class="tw-rounded-t-md"></v-img>
           <v-card-title class="tw-mt-3 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ post.title }}</v-card-title>
+          <v-card-text class="tw-mb-3">{{ post.date }}</v-card-text>
           <v-card-text class="tw-mb-3">{{ post.excerpt }}</v-card-text>
           <v-card-actions>
-            <v-btn text :to="{ name: 'blog-slug', params: { slug: post.slug } }">Read More</v-btn>
+            <nuxt-link :to="{ path: post.slug }">Read More</nuxt-link>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -80,60 +81,14 @@
 </template>
 
 <script>
+import { getPosts } from '../api/posts';
   export default {
-    data() {
-      return {
-        posts: [{
-            title: "Introduction to Ms Implant",
-            slug: "post-title-1",
-            excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing, Suscipit urna tristique ornare ipsum commodo viverra habitant",
-            image: "https://img.freepik.com/free-photo/african-american-woman-doctor-showing-blank-smartphone-screen-against-blue-background_93675-132959.jpg?w=740&t=st=1683277346~exp=1683277946~hmac=e5a93d4cc6c6d260bd7110536ea4109a635497d24aa7fecc166d8c898dce662b"
-          },
-          {
-            title: "Introduction to Ms Implant",
-            slug: "post-title-2",
-            excerpt: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing. Suscipit urna tristique ornare ipsum commodo viverra habitant.",
-            image: "https://img.freepik.com/free-photo/african-american-woman-doctor-showing-blank-smartphone-screen-against-blue-background_93675-132959.jpg?w=740&t=st=1683277346~exp=1683277946~hmac=e5a93d4cc6c6d260bd7110536ea4109a635497d24aa7fecc166d8c898dce662b"
-          },
-          {
-            title: "Introduction to Ms Implant",
-            slug: "post-title-3",
-            excerpt: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing. Suscipit urna tristique ornare ipsum commodo viverra habitant.",
-            image: "https://img.freepik.com/free-photo/african-american-woman-doctor-showing-blank-smartphone-screen-against-blue-background_93675-132959.jpg?w=740&t=st=1683277346~exp=1683277946~hmac=e5a93d4cc6c6d260bd7110536ea4109a635497d24aa7fecc166d8c898dce662b"
-          },
-          {
-            title: "Introduction to Ms Implant",
-            slug: "post-title-4",
-            excerpt: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing. Suscipit urna tristique ornare ipsum commodo viverra habitant.",
-            image: "https://img.freepik.com/free-photo/african-american-woman-doctor-showing-blank-smartphone-screen-against-blue-background_93675-132959.jpg?w=740&t=st=1683277346~exp=1683277946~hmac=e5a93d4cc6c6d260bd7110536ea4109a635497d24aa7fecc166d8c898dce662b"
-          }
-        ],
-        categories: ["Category 1", "Category 2", "Category 3"],
-        recentPosts: [{
-            title: 'Recent Post 1',
-            date: 'May 1, 2023',
-            slug: 'recent-post-1'
-          },
-          {
-            title: 'Recent Post 2',
-            date: 'May 2, 2023',
-            slug: 'recent-post-2'
-          },
-          {
-            title: 'Recent Post 3',
-            date: 'May 3, 2023',
-            slug: 'recent-post-3'
-          },
-          {
-            title: 'Recent Post 4',
-            date: 'May 4, 2023',
-            slug: 'recent-post-4'
-          }
-        ],
-        selectedCategory: null
-      }
+    async asyncData () {
+      const posts = await getPosts();
+      console.log(posts)
+      return { posts: posts }
     },
-
+    
     head() {
     return {
       title: 'News Page',

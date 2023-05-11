@@ -287,66 +287,19 @@ GUIDÉ</h1>
             Blog</h1>
         </span>
         <v-row class="tw-transform tw--translate-y-10 tw-bottom-0 tw-left-0 tw-block md:tw-left-20">
-          <v-col :key="index" cols="12" md="6" lg="4">
-            <v-card>
-              <v-img
-                src="https://img.freepik.com/free-photo/smiling-dentist-writing-medical-report_107420-74077.jpg?size=626&ext=jpg"
-                aspect-ratio="1.5"></v-img>
-              <v-card-title>
-                <h2 class="tw-text-md tw-text-blue-600 tw-font-extrabold">Introduction to Ms Implant</h2>
-              </v-card-title>
-              <v-card-subtitle>
-                <p class="tw-shadow-2xl tw-rounded tw-bg-gray-200 tw-p-2 tw-w-1/3">22/10/2023</p>
-              </v-card-subtitle>
-              <v-card-text>
-                <p>Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
-            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
-              </v-card-text>
-              <v-card-actions>
-                <v-btn class="tw-bg-gray-200" color="primary" text>Read More</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-          <v-col :key="index" cols="12" md="6" lg="4">
-            <v-card>
-              <v-img
-                src="https://img.freepik.com/free-photo/dentist-holding-variety-teeth_23-2148380318.jpg?w=740&t=st=1683154076~exp=1683154676~hmac=dae19498e588ba65f47d0fd3b00e04b5caa2d6bd6c70ac5626e0a88d63137d94"
-                aspect-ratio="1.5"></v-img>
-              <v-card-title>
-                <h2 class="tw-text-md tw-text-blue-600 tw-font-extrabold">Introduction to Ms Implant</h2>
-              </v-card-title>
-              <v-card-subtitle>
-                <p class="tw-shadow-2xl tw-rounded tw-bg-gray-200 tw-p-2 tw-w-1/3">22/10/2023</p>
-              </v-card-subtitle>
-              <v-card-text>
-                <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
-            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
-              </v-card-text>
-              <v-card-actions>
-                <v-btn class="tw-bg-gray-200" color="primary" text>Read More</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-          <v-col :key="index" cols="12" md="6" lg="4">
-            <v-card>
-              <v-img
-                src="https://t3.ftcdn.net/jpg/02/13/15/90/240_F_213159011_e3nHupHasTeEHTsnqDksxBD9oCwfg9yA.jpg"
-                aspect-ratio="1.5"></v-img>
-              <v-card-title>
-                <h2 class="tw-text-md tw-text-blue-600 tw-font-extrabold">Introduction to Ms Implant</h2>
-              </v-card-title>
-              <v-card-subtitle>
-                <p class="tw-shadow-2xl tw-rounded tw-bg-gray-200 tw-p-2 tw-w-1/3">22/10/2023</p>
-              </v-card-subtitle>
-              <v-card-text>
-                <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
-            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
-              </v-card-text>
-              <v-card-actions>
-                <v-btn class="tw-bg-gray-200" color="primary" text>Read More</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
+          <v-col  md="4" lg="4" v-for="(post, index) in posts" :key="index" limit="2">
+            
+        <v-card class="tw-mb-6">
+          <v-img :src="post.feature_image" height="300px" class="tw-rounded-t-md"></v-img>
+          <v-card-title class="tw-mt-3 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ post.title }}</v-card-title>
+          
+          <v-card-actions>
+            <nuxt-link :to="{ path: post.slug }">Read More</nuxt-link>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+      
+          
         </v-row>
       
     </section>
@@ -357,15 +310,22 @@ GUIDÉ</h1>
 </template>
 
 <script>
+import { getPosts } from '../api/posts';
   export default {
-    name: 'IndexPage',
-
+    async asyncData () {
+      
+      const posts = await getPosts(3);
+      console.log(posts)
+      return { posts: posts }
+    },
+    
     head() {
     return {
       title: 'Welcome to Ms implant',
       
-    }
-  }
+    }},
+
+   
   }
 
 </script>

@@ -72,5 +72,7 @@ export default {
         type: 'javascript/auto',
       })
     }
-  }
+  },
+
+  serverMiddleware: ['~/api/v1/send-email.js'],
 }
