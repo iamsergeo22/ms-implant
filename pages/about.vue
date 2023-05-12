@@ -14,7 +14,7 @@
     ></v-breadcrumbs>
   </div>
 
-  <div class="tw-flex tw-flex-col tw-bg-gray-200 tw-justify-center tw-items-center">
+  <div class="tw-flex tw-flex-col tw-bg-gray-300 tw-justify-center tw-items-center">
 
     <!-- Section: About Us -->
     <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-my-5 tw-w-full">
@@ -130,7 +130,7 @@
 
     <section class="tw-w-full">
       <div class="tw-bg-white tw-p-12">
-      <h1 class="tw-text-blue-600 tw-text-center tw-text-2xl">Qui Sommes Nous?</h1>
+      <h1 class="tw-text-blue-600 tw-text-center tw-font-extrabold tw-text-2xl">Qui Sommes Nous?</h1>
       <p class="tw-text-center tw-text-gray-800 tw-text-md tw-lowercase">UNE SOCIÉTÉ RÉCENTE, UNE EXPÉRIENCE PROBANTE EVOLUTIS</p>
       <div class="tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center tw-mt-4">
         <div class="lg:tw-w-3/4 tw-w-full tw-h-72 tw-relative lg:tw-pt-56">

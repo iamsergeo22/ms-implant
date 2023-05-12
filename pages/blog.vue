@@ -20,7 +20,7 @@
   </div>
 
 
-  <div class="tw-bg-gray-200 tw-pt-4">
+  <div class="tw-bg-gray-300 tw-pt-4">
 
     <h1
       class="tw-mt-4 tw-text-xl tw-text-center lg:tw-text-2xl tw-font-bold tw-uppercase md:tw-ml-8 md:tw-ml-20 md:tw-mb-6 tw-font-extrabold tw-text-blue-600">
@@ -28,7 +28,7 @@
     </h1>
 
 
-    <v-row class="tw-p-6 tw-pt-3 tw-bg-gray-200">
+    <v-row class="tw-p-6 tw-pt-3 tw-bg-gray-300">
       <v-col cols="12" md="8" class="">
         <v-card v-for="(post, index) in posts" :key="index" class="tw-mb-6">
           <v-img :src="post.feature_image" height="400px" class="tw-rounded-lg tw-shadow-2xl"></v-img>

@@ -16,7 +16,7 @@
   </div>
 
 
-  <div class="tw-bg-gray-200 tw-pt-4">
+  <div class="tw-bg-gray-300 tw-pt-4">
 
     <section class="tw-pt-4 tw-pb-8 lg:tw-pb-10 lg:tw-px-3 tw-p-4 tw-flex-col tw-gap-4 tw-mt-8">
       <div class="tw-w-full">

@@ -88,7 +88,7 @@ GUIDÉ</h1>
 
         </div>
         <div class="tw-basis-1/2">
-          <p class="tw-font-extrabold tw-mx-4 tw-text-blue-900 tw-text-xl tw-font-bold lg:tw-text-left tw-uppercase tw-mb-2">
+          <p class="tw-font-extrabold tw-mx-4 tw-text-blue-900 tw-text-xl tw-font-bold lg:tw-text-left tw-uppercase">
             A Propos de Nous</p>
 
           <v-card-text class="tw-text-justify tw-text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -97,13 +97,15 @@ GUIDÉ</h1>
             Suscipit urna tristique ornare.
 
             Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
-            Suscipit urna tristique ornare ipsum commodo viverra habitant.
+            elit. Morbi quam faucibus nam lorem. Imperdiet a, nibh mauris nec nibh.
+            Interdum quisque morbi amet ut quam nunc facilisis velit.
+            
 
 
           </v-card-text>
           <v-card-text class="tw-text-justify tw-text-xl">
             Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
-            Suscipit urna tristique ornare ipsum commodo viverra habitant.
+            
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quam faucibus nam lorem. Imperdiet a, nibh
 
           </v-card-text>
@@ -138,7 +140,7 @@ GUIDÉ</h1>
 
             <v-card-text class="tw-text-sm">
               <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
-            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
+            </p>
             </v-card-text>
 
           </v-card>
@@ -154,7 +156,7 @@ GUIDÉ</h1>
 
             <v-card-text class="tw-text-sm">
               <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
-            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
+            </p>
             </v-card-text>
 
 
@@ -171,7 +173,7 @@ GUIDÉ</h1>
 
             <v-card-text class="tw-text-sm">
               <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
-            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
+            </p>
             </v-card-text>
 
 
@@ -189,7 +191,7 @@ GUIDÉ</h1>
 
             <v-card-text class="tw-text-sm">
               <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
-            Suscipit urna tristique ornare ipsum commodo viverra habitant.</p>
+            </p>
             </v-card-text>
 
 
