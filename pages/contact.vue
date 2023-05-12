@@ -21,7 +21,7 @@
         <div class="tw-text-lg sm:tw-text-lg lg:tw-w-2/3">
 
           <form class="tw-mb-8" v-on:submit.prevent="sendMessage">
-            <h2 class="tw-font-extrabold tw-text-2xl tw-text-blue-600 tw-text-left tw-mb-2">Contact Me</h2>
+            <h2 class="tw-font-extrabold tw-text-2xl tw-text-blue-600 tw-text-left tw-mb-2">Contact Us</h2>
 
             <div class="tw-w-full tw-md:w-1/2">
               <label class="tw-block tw-black tw-font-extrabold tw-mb-2" for="name">
