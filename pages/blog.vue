@@ -44,7 +44,7 @@
       </v-col>
       <v-col cols="12" md="4">
       
-        <v-card class="tw-mt-4">
+        <v-card class="">
           <p class="tw-font-extrabold tw-text-blue-600 tw-mt-4 tw-text-2xl tw-px-8">Recent Posts</p>
 
           <v-card-text>

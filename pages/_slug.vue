@@ -5,8 +5,8 @@
         src="https://img.freepik.com/premium-photo/african-american-practitioner-assistant-with-protective-face-mask-against-coroanvirus_482257-26733.jpg?w=740"
         alt="Banner Image">
       <div
-        class="tw-relative tw-w-full tw-h-full tw-flex tw-flex-col tw-justify-center tw-items-center tw-bg-gray-900 tw-bg-opacity-60">
-        <h1 class="tw-text-4xl tw-font-bold tw-text-white">{{ post.title }}</h1>
+        class="tw-relative tw-w-full tw-h-full tw-flex tw-flex-col tw-justify-center tw-text-center tw-items-center tw-bg-gray-900 tw-bg-opacity-60">
+        <h1 class="lg:tw-text-4xl tw-text-xl tw-font-bold tw-text-white">{{ post.title }}</h1>
       </div>
     </div>
 
@@ -29,8 +29,8 @@
             
            
            
-              <h1 class="tw-text-3xl tw-pt-4 tw-font-extrabold tw-text-blue-600">{{ post.title }}</h1>
-            <v-list-item-subtitle class="tw-mt-2 tw-px-2 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ new Date(post.created_at).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) }}</v-list-item-subtitle>
+              <h1 class="lg:tw-text-3xl tw-text-2xl tw-pt-4 tw-font-extrabold tw-text-blue-600">{{ post.title }}</h1>
+            <v-list-item-subtitle class="tw-mt-2 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ new Date(post.created_at).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) }}</v-list-item-subtitle>
 
               <div class="tw-text-justify tw-mb-4" v-html="post.html"/>
             
@@ -55,6 +55,12 @@
       const post = await getSinglePost(params.slug);
       return { post: post }
     },
+
+    head() {
+    return {
+      title: 'Slug News Page',
+      
+    }},
 
     computed: {
     breadcrumbItems() {

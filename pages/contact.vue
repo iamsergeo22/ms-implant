@@ -24,7 +24,7 @@
             <h2 class="tw-font-extrabold tw-text-2xl tw-text-blue-600 tw-text-left tw-mb-2">Contact Me</h2>
 
             <div class="tw-w-full tw-md:w-1/2">
-              <label class="tw-block tw-black tw-mb-2" for="name">
+              <label class="tw-block tw-black tw-font-extrabold tw-mb-2" for="name">
                 Name
               </label>
 
@@ -34,7 +34,7 @@
             </div>
 
             <div class="tw-w-full tw-md:w-1/2">
-              <label class="tw-block tw-black tw-mb-2" for="email">
+              <label class="tw-block tw-black tw-font-extrabold tw-mb-2" for="email">
                 Email Address
               </label>
 
@@ -45,7 +45,7 @@
 
 
             <div class="tw-w-full tw-md:w-1/2">
-              <label class="tw-block tw-black tw-mb-2" for="number">
+              <label class="tw-block tw-black tw-font-extrabold tw-mb-2" for="number">
                 Phone Number
               </label>
 
@@ -58,7 +58,7 @@
 
 
             <div class="tw-w-full tw-mb-8">
-              <label class="tw-block tw-black tw-mb-2" for="message">
+              <label class="tw-block tw-black tw-font-extrabold tw-mb-2" for="message">
                 Message
               </label>
 
@@ -68,7 +68,7 @@
             </div>
 
             <button type="submit" 
-              class="tw-block tw-bg-blue-600 hover:tw-bg-blue-800 tw-text-white tw-text-sm tw-font-semibold tw-uppercase tw-shadow tw-rounded tw-cursor-pointer tw-px-6 tw-py-3">
+              class="tw-bg-blue-600 hover:tw-bg-blue-800 tw-text-white tw-text-sm tw-font-semibold tw-uppercase tw-shadow tw-rounded tw-cursor-pointer tw-px-6 tw-py-3">
               Envoyer
             </button>
           </form>
@@ -147,6 +147,12 @@ const swal = require('sweetalert2')
         
       }
     },
+
+    head() {
+    return {
+      title: 'Contact Us Page',
+      
+    }},
    
     computed: {
       breadcrumbItems() {
