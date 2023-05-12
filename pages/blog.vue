@@ -52,7 +52,7 @@
               <v-list-item v-for="(recentPost, index) in recentPosts" :key="index">
                 <v-list-item-content>
                   <nuxt-link :to="{ path: recentPost.slug }">
-                    <v-img :src="recentPost.feature_image" height="150px" class="tw-rounded-lg tw-shadow-2xl"></v-img>
+                    <v-img :src="recentPost.feature_image" height="150px" class="tw-rounded-lg tw-shadow-2xl tw-w-1/2 tw-bg-center"></v-img>
                   <v-list-item-title class="tw-mt-3 tw-text-2xl tw-font-extrabold tw-text-blue-600">{{ recentPost.title }}</v-list-item-title>
                   <v-list-item-subtitle class="tw-mt-3 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ new Date(recentPost.created_at).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) }}</v-list-item-subtitle>
                   </nuxt-link>
