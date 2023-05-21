@@ -25,7 +25,7 @@
           </h1>      </div>
       <div class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-4 lg:tw-container lg:tw-p-8 tw-p-4 lg:tw-justify-center tw-items-center tw-w-full">
         <!-- History -->
-        <div class="tw-flex tw-shadow-2xl tw-rounded-lg tw-bg-white tw-block tw-p-6  tw-cursor-pointer tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
+        <div class="tw-flex tw-shadow-2xl tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded tw-rounded-lg tw-bg-white tw-block tw-p-6  tw-cursor-pointer tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
           <div class="tw-bg-blue-600 tw-rounded-full tw-p-3 tw-mb-2">
             <v-icon>mdi-history</v-icon>
           </div>
@@ -35,7 +35,7 @@
           </p>
         </div>
         <!-- Achievement -->
-        <div class="tw-flex tw-shadow-2xl tw-rounded-lg tw-bg-white tw-block tw-cursor-pointer tw-p-6  tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
+        <div class="tw-flex tw-shadow-2xl tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded tw-rounded-lg tw-bg-white tw-block tw-cursor-pointer tw-p-6  tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
           <div class="tw-bg-blue-600 tw-rounded-full tw-p-3 tw-mb-2">
             <v-icon>mdi-trophy-variant</v-icon>
           </div>
@@ -45,7 +45,7 @@
           </p>
         </div>
         <!-- Vision -->
-        <div class="tw-flex tw-shadow-2xl tw-rounded-lg tw-bg-white tw-block tw-cursor-pointer tw-p-6 tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
+        <div class="tw-flex tw-shadow-2xl tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded tw-rounded-lg tw-bg-white tw-block tw-cursor-pointer tw-p-6 tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
           <div class="tw-bg-blue-600 tw-rounded-full tw-p-3 tw-mb-2">
             <v-icon>mdi-eye</v-icon>
           </div>
@@ -75,7 +75,7 @@
               </div>
 
               <div
-                   class="tw-bg-white tw-block tw-cursor-pointer tw-w-full tw-shadow-sm tw-shadow-indigo-100">
+                   class="tw-bg-white  tw-block tw-cursor-pointer tw-w-full tw-shadow-sm tw-shadow-indigo-100">
                
                 <div class="tw-px-4 tw-text-center tw-h-[fit-content] lg:tw-h-full tw-p-4 lg:tw-my-12">
                   <h1 class="tw-font-extrabold tw-text-2xl tw-text-blue-600">Maîtrise de la conception et fabrication des implants</h1>

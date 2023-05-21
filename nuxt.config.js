@@ -41,7 +41,7 @@ export default {
   modules: [
     '@nuxt/content',
     ['vue-scrollto/nuxt', { duration: 500, easing: 'ease' }],
-    
+    '@nuxtjs/google-fonts',
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
