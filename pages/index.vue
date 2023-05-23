@@ -31,7 +31,7 @@
           <div
             class="tw-flex tw-flex-col tw-justify-center tw-items-center lg:tw-p-12 tw-p-12 tw-rounded-lg tw-shadow-lg bg-color">
             <h1 class="tw-text-white lg:tw-text-4xl sm:tw-text-4xl tw-font-bold tw-text-center tw-uppercase">SYSTÈME D'IMPLANTOLGIE
-GUIDÉ</h1>
+            GUIDÉ</h1>
             <p class="tw-text-blue-600 lg:tw-text-2xl sm:tw-text-xl tw-italic tw-font-bold tw-text-center">We offer a
               wide variety of ms implant services</p>
           </div>
@@ -45,7 +45,7 @@ GUIDÉ</h1>
           <div
             class="tw-flex tw-flex-col tw-justify-center tw-items-center lg:tw-p-12 tw-p-12 tw-rounded-lg tw-shadow-lg bg-color">
             <h1 class="tw-text-white lg:tw-text-4xl sm:tw-text-4xl tw-font-bold tw-text-center tw-uppercase">SYSTÈME D'IMPLANTOLGIE
-GUIDÉ</h1>
+            GUIDÉ</h1>
             <p class="tw-text-blue-600 lg:tw-text-2xl sm:tw-text-xl tw-italic tw-font-bold tw-text-center">We offer a
               wide variety of ms implant services</p>
           </div>
@@ -58,7 +58,7 @@ GUIDÉ</h1>
           <div
             class="tw-flex tw-flex-col tw-justify-center tw-items-center lg:tw-p-12 tw-p-12 tw-rounded-lg tw-shadow-lg bg-color">
             <h1 class="tw-text-white lg:tw-text-4xl sm:tw-text-4xl tw-font-bold tw-text-center tw-uppercase">SYSTÈME D'IMPLANTOLGIE
-GUIDÉ</h1>
+            GUIDÉ</h1>
             <p class="tw-text-blue-600 lg:tw-text-2xl sm:tw-text-xl tw-italic tw-font-bold tw-text-center">We offer a
               wide variety of ms implant services</p>
           </div>
@@ -333,7 +333,9 @@ import { getPosts } from '../api/posts';
 
     setup() {
       if (process.client) {
-     new AOS.init({ /* options */ });
+     new AOS.init({ 
+            once: true,
+            duration: 2000 });
   }
     },
 

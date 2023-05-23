@@ -4,8 +4,8 @@
     <nav class="tw-shadow-lg tw-mx-auto tw-flex tw-flex-wrap tw-gap-4 tw-px-8 tw-lg:justify-evenly tw-justify-between tw-items-center tw-py-6">
       <div>
         <nuxt-link to="/">
-          <h1 class="tw-text-xl tw-font-extrabold tw-text-blue-600">
-            ms-implant.
+          <h1 class="tw-text-xl tw-font-extrabold tw-text-blue-600 tw-shadow-2xl">
+            Ms Implant
           </h1>
         </nuxt-link>
         
@@ -137,7 +137,7 @@
     </v-container>
     <v-divider class="tw-my-4"></v-divider>
     <div class="tw-text-center tw-text-white">
-      <p>&copy; 2023 Ms Implant. All rights reserved. Designed by <strong>Serge Tassiga</strong></p>
+      <p>&copy; 2023 Ms Implant. All rights reserved. Designed by <strong class="tw-extrabold">Softsink and I-Solutions</strong></p>
     </div>
   </footer>
    
