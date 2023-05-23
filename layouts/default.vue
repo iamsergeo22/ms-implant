@@ -23,20 +23,20 @@
         </li>
 
         <li @click="closeMenu">
-          <nuxt-link to="/" :class="$route.path === '/'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Home</nuxt-link>
+          <nuxt-link to="/" :class="$route.path === '/'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Accueil</nuxt-link>
         </li>
         <li @click="closeMenu">
-          <nuxt-link to="/product" :class="$route.path === '/product'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Products</nuxt-link>
+          <nuxt-link to="/product" :class="$route.path === '/product'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Produits</nuxt-link>
         </li>
         <li @click="closeMenu">
-          <nuxt-link to="/about" :class="$route.path === '/about'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">About Us</nuxt-link>
+          <nuxt-link to="/about" :class="$route.path === '/about'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">À propos de nous</nuxt-link>
         </li>
         <li @click="closeMenu">
-          <nuxt-link to="/blog" :class="$route.path === '/blog'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">News</nuxt-link>
+          <nuxt-link to="/blog" :class="$route.path === '/blog'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Actualités</nuxt-link>
         </li>
 
         <li @click="closeMenu">
-          <nuxt-link to="/contact" :class="$route.path === '/contact'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Contact Us</nuxt-link>
+          <nuxt-link to="/contact" :class="$route.path === '/contact'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Nous contacter</nuxt-link>
         </li>
 
       </ul>
@@ -48,18 +48,18 @@
     </div>
 
 
-    <footer class="tw-text-white tw-bg-blue-600 tw-p-8">
+    <footer class="tw-text-white tw-bg-blue-900 tw-p-8">
     <v-container>
       <v-row>
         <v-col cols="12" md="6" lg="3">
-          <h3 class="tw-text-white tw-font-extrabold tw-mb-4">About Us</h3>
+          <h3 class="tw-text-white tw-font-extrabold tw-mb-4">À propos de nous</h3>
           <p class="tw-text-white tw-text-md tw-justify-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a
             nunc at ipsum fringilla congue non non nunc. 
           </p>
         </v-col>
         <v-col cols="12" md="6" lg="3">
-          <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Contact Us</h3>
+          <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Nous contacter</h3>
           <p class="tw-text-white tw-leading-6">
             123 Main Street<br />
             Anytown, USA 12345<br />
@@ -72,25 +72,25 @@
           </p>
         </v-col>
         <v-col cols="12" md="6" lg="3">
-          <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Links</h3>
+          <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Liens Rapides</h3>
           <ul class="tw-list-disc tw-list-inside tw-text-gray-400 tw-leading-6">
             <li>
-              <a href="/" class="tw-text-white">Home</a>
+              <a href="/" class="tw-text-white">Accueil</a>
             </li>
             <li>
-              <a href="/product" class="tw-text-white">Products</a>
+              <a href="/product" class="tw-text-white">Produits</a>
             </li>
             <li>
-              <a href="/about" class="tw-text-white">About Us</a>
+              <a href="/about" class="tw-text-white">À propos de nous</a>
             </li>
             <li>
-              <a href="/contact" class="tw-text-white">Contact Us</a>
+              <a href="/contact" class="tw-text-white">Nous contacter</a>
             </li>
             
           </ul>
         </v-col>
         <v-col cols="12" md="6" lg="3">
-          <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Connect with Us</h3>
+          <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Connectez-vous avec nous</h3>
           <div class="tw-mb-4">
             <ul class="tw-flex tw-items-center tw-gap-4">
           <li>
@@ -137,7 +137,7 @@
     </v-container>
     <v-divider class="tw-my-4"></v-divider>
     <div class="tw-text-center tw-text-white">
-      <p>&copy; 2023 Ms Implant. All rights reserved. Designed by <strong class="tw-extrabold">Softsink and I-Solutions</strong></p>
+      <p>&copy; 2023 Ms Implant. Tous droits réservés. Conçu par <strong class="tw-extrabold">Softsink and I-Solutions</strong></p>
     </div>
   </footer>
    

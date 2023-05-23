@@ -7,7 +7,7 @@
         alt="Banner Image">
       <div
         class="tw-relative tw-w-full tw-h-full tw-flex tw-flex-col tw-justify-center tw-items-center tw-bg-gray-900 tw-bg-opacity-60">
-        <h1 class="tw-text-4xl tw-font-bold tw-text-white">Contact Us</h1>
+        <h1 class="tw-text-4xl tw-font-bold tw-text-white">Nous contacter</h1>
       </div>
     </div>
     <div class="tw-flex tw-items-center tw-space-x-2 tw-px-8">
@@ -21,11 +21,11 @@
         <div class="tw-text-lg sm:tw-text-lg lg:tw-w-2/3">
 
           <form class="tw-mb-8" v-on:submit.prevent="sendMessage">
-            <h2 class="tw-font-extrabold tw-text-2xl tw-text-blue-600 tw-text-left tw-mb-2">Contact Us</h2>
+            <h2 class="tw-font-extrabold tw-text-2xl tw-text-blue-600 tw-text-left tw-mb-2">Formulaire de Contact</h2>
 
             <div class="tw-w-full tw-md:w-1/2">
               <label class="tw-block tw-black tw-font-extrabold tw-mb-2" for="name">
-                Name
+                Nom
               </label>
 
               <input type="name" name="name" id="email" placeholder="John Doe" v-model="contact.name"
@@ -35,7 +35,7 @@
 
             <div class="tw-w-full tw-md:w-1/2">
               <label class="tw-block tw-black tw-font-extrabold tw-mb-2" for="email">
-                Email Address
+                Adresse e-mail
               </label>
 
               <input type="email" name="email" id="email" placeholder="email@example.com" v-model="contact.email"
@@ -46,7 +46,7 @@
 
             <div class="tw-w-full tw-md:w-1/2">
               <label class="tw-block tw-black tw-font-extrabold tw-mb-2" for="number">
-                Phone Number
+                Numéro de téléphone
               </label>
 
               <input type="number" name="number" id="number" placeholder="+228 91 58 50 75" v-model="contact.phone"
@@ -57,20 +57,27 @@
 
 
 
-            <div class="tw-w-full tw-mb-8">
+            <div class="tw-w-full tw-mb-4">
               <label class="tw-block tw-black tw-font-extrabold tw-mb-2" for="message">
                 Message
               </label>
 
               <textarea id="message" rows="5" name="message" v-model="contact.message"
                 class="tw-block tw-w-full tw-p-4 tw-bg-white tw-border tw-border-border-color-primary tw-shadow tw-rounded tw-outline-none tw-appearance-none focus:tw-border-green-700 tw-mb-2 tw-py-4"
-                placeholder="Enter your message here." required></textarea>
+                placeholder="Entrez votre message ici." required></textarea>
             </div>
 
-            <button type="submit" 
-              class="tw-bg-blue-600 hover:tw-bg-blue-800 tw-text-white tw-text-sm tw-font-semibold tw-uppercase tw-shadow tw-rounded tw-cursor-pointer tw-px-6 tw-py-3">
-              Envoyer
-            </button>
+            <v-card-actions>
+            <nuxt-link to="/about"
+              class="tw-group tw-relative tw-font-extrabold xl:tw-px-6 tw-mb-4 tw-pt-3 tw-rounded-lg tw-shadow-2xl tw-h-12 tw-mt-4 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-blue-600 tw-border hover:tw-shadow-lg tw-overflow-hidden tw-rounded-lg tw-bg-blue-600 tw-text-white tw-text-lg tw-shadow-2xl">
+              <div
+                class="tw-absolute tw-inset-0 tw-w-0 tw-bg-blue-900 tw--transition-all tw-duration-[250ms] tw-ease-out group-hover:tw-w-full">
+              </div>
+              <span class="tw-relative tw-inline-flex tw-items-center tw-gap-2 tw-text-white group-hover:tw-text-white">
+                Envoyer
+              </span>
+            </nuxt-link>
+          </v-card-actions>
           </form>
         </div>
 
@@ -79,7 +86,7 @@
         <div>
           <div class="tw-bg-gray-100 tw-rounded-lg tw-shadow-lg tw-px-12 tw-items-center">
             <div class="tw-flex tw-flex-col tw-gap-3 tw-pb-4">
-              <h1 class="font-extrabold text-2xl tw-text-blue-600 tw-mt-3">Address details:</h1>
+              <h1 class="tw-font-extrabold tw-text-2xl tw-text-blue-600 tw-mt-3">Détails de l'adresse:</h1>
 
               <span class="tw-flex lg:tw-gap-2 tw-gap-1 lg:tw-text-lg tw-text-md">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" class="tw-w-6" role="img"
@@ -124,6 +131,7 @@
     <div
       class="tw-mt-12 tw-px-8 tw-pb-4 tw-shadow-2xl tw-rounded-lg tw-aspect-w-16 tw-aspect-h-7 tw-rounded-lg tw-overflow-hidden">
       <iframe
+      class="tw-shadow-2xl tw-rounded-lg"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.417412837234!2d-73.98579178521707!3d40.74844194225139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259d75c5f5c5d%3A0x93a74d47b46dbd65!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1635024562182!5m2!1sen!2sus"
         width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
@@ -132,12 +140,14 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const swal = require('sweetalert2')
 
   export default {
     data() {
       return {
-        title: 'Contact Us Page',
+        title: 'Nous contacter Page',
         contact: {
           name: "",
           phone: "",
@@ -150,14 +160,14 @@ const swal = require('sweetalert2')
 
     head() {
     return {
-      title: 'Contact Us Page',
+      title: 'Nous contacter Page',
       
     }},
    
     computed: {
       breadcrumbItems() {
         const items = [{
-            text: 'Home',
+            text: 'Accueil',
             href: '/',
           },
           {
@@ -172,6 +182,16 @@ const swal = require('sweetalert2')
           disabled: !item.href,
         }));
       },
+    },
+
+    mounted() {
+      if (!this.initialized) {
+        AOS.init({
+          once: true,
+          duration: 2000
+        });
+        this.initialized = true;
+      }
     },
 
     methods: {
