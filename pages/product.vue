@@ -163,7 +163,7 @@
       <section>
 
 
-        <div class="tw-relative tw-h-72 tw-w-full">
+        <div class="tw-relative lg:tw-h-72 tw-h-96 tw-w-full">
         <img class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-object-cover" src="https://img.freepik.com/premium-photo/african-american-practitioner-assistant-with-protective-face-mask-against-coroanvirus_482257-26733.jpg?w=740
 "
           width="700px" alt="Image">
@@ -177,7 +177,7 @@
       </div>
 
       <div
-        class="tw-bg-blue-900 tw-p-12 tw-shadow-2xl tw-rounded-md lg:tw-mx-12 tw-mx-8 tw-transform tw--translate-y-20 tw-bottom-0 tw-left-0 tw-px-8 tw-py-12">
+        class="tw-bg-blue-900 tw-p-12 tw-shadow-2xl tw-rounded-md lg:tw-mx-12 tw-mx-8 tw-transform tw--translate-y-40 lg:tw--translate-y-20  tw-bottom-0 tw-left-0 tw-px-8 tw-py-12">
         <h1 class="lg:tw-text-xl tw-text-white tw-text-md lg:tw-px-12 tw-px-8" data-aos="fade-up">
           Découvrez notre incroyable produit qui révolutionne le marché ! Pour plus d'informations, contactez-nous dès maintenant:
         </h1>

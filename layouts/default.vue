@@ -39,6 +39,8 @@
           <nuxt-link to="/contact" :class="$route.path === '/contact'?'active':''" class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Nous contacter</nuxt-link>
         </li>
 
+     
+
       </ul>
     </nav>
   </header>
@@ -151,6 +153,7 @@
 </template>
 
 <script>
+
   export default {
 
     mounted() {
@@ -181,6 +184,9 @@
     },
     closeMenu() {
       this.isOpen = false;
+    },
+    switchLanguage(locale) {
+      this.$i18n.locale = locale;
     }
   }
 

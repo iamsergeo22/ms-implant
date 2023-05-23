@@ -2,27 +2,28 @@
 
   <div>
 
-    <div class="">
+    <div class="tw-relative">
 
-      <v-carousel cycle hide-delimiter-background height="700" v-model="model" :show-arrows="false">
-        <v-carousel-item class="tw-h-full tw-w-full"
+      <v-carousel cycle hide-delimiter-background height="700" width="700" v-model="model" :show-arrows="false">
+        <v-carousel-item class="tw-absolute"
+        >
+          <img class="tw-w-full tw-h-full" src="../assets/Ok3.png" alt="">
+        </v-carousel-item>
+        <v-carousel-item class="tw-absolute"
         >
           
-          <img src="../assets/1.png" alt="">
+          <img class="tw-h-full"  src="../assets/Ok4.png" alt="">
 
         </v-carousel-item>
-        <v-carousel-item class="tw-h-full tw-w-full"
+        <v-carousel-item class="tw-absolute"
         >
-          <img src="../assets/2.png" alt="">
+          <img class="tw-h-full"  src="../assets/Ok1.png" alt="">
         </v-carousel-item>
-        <v-carousel-item class="tw-h-full tw-w-full"
+        <v-carousel-item class="tw-absolute"
           >
-          <img src="../assets/3.png" alt="">
+          <img class="tw-h-full"  src="../assets/Ok2.png" alt="">
         </v-carousel-item>
-        <v-carousel-item class="tw-h-full tw-w-full"
-        >
-          <img src="../assets/4.png" alt="">
-        </v-carousel-item>
+        
       </v-carousel>
 
 
@@ -31,7 +32,7 @@
     <span
       class="lg:tw-w-1/2 tw-transform tw--translate-y-10 tw-bottom-0 tw-left-0 tw-block md:tw-left-20 -tw-bottom-10 tw-mb-4">
       <h1
-        class="tw-mx-1 md:tw-mx-4 tw-bg-white md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-blue-900 tw-p-4 tw-rounded" data-aos="fade-up">
+        class="tw-mx-1 md:tw-mx-4 tw-bg-white md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-blue-900 tw-p-4 tw-rounded">
         A Propos de Nous</h1>
     </span>
 
@@ -72,7 +73,7 @@
 
             <v-card-actions>
             <nuxt-link to="/about"
-              class="tw-group tw-relative tw-font-extrabold xl:tw-px-6 tw-py-2 tw-mb-4 xl:tw-py-3 tw-rounded-lg tw-shadow-2xl tw-h-12 tw-mt-4 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-blue-600 tw-border hover:tw-shadow-lg tw-overflow-hidden tw-rounded-lg tw-bg-white tw-text-lg tw-shadow-2xl">
+              class="tw-group tw-relative tw-font-extrabold xl:tw-px-6 tw-px-4 tw-py-2 tw-mb-4 xl:tw-py-3 tw-rounded-lg tw-shadow-2xl tw-h-12 tw-mt-4 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-blue-600 tw-border hover:tw-shadow-lg tw-overflow-hidden tw-rounded-lg tw-bg-white tw-text-lg tw-shadow-2xl">
               <div
                 class="tw-absolute tw-inset-0 tw-w-3 tw-bg-blue-900 tw--transition-all tw-duration-[250ms] tw-ease-out group-hover:tw-w-full">
               </div>
@@ -97,21 +98,23 @@
       <span
         class="lg:tw-w-1/2 tw-justify-center tw-transform tw--translate-y-20 lg:tw-mx-78 tw-bottom-0 tw-left-0 tw-block md:tw-left-20">
         <h1
-          class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded" data-aos="fade-up">
+          class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded">
           Nos Produits</h1>
       </span>
 
-      <v-row data-aos="fade-up">
+      <v-row  data-aos="zoom-out"
+              data-aos-easing="linear" data-aos-duration="2000">
         <v-col cols="12" md="6" lg="3">
-          <div class="tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded">
+          <div class="tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded" data-aos="zoom-in-down"
+              data-aos-easing="linear" data-aos-duration="2000">
             <v-img class=""
               src="https://images.pexels.com/photos/5427646/pexels-photo-5427646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               aspect-ratio="1"></v-img>
-            <v-card-title class="tw-font-bold tw-text-lg" data-aos="fade-up">
+            <v-card-title class="tw-font-bold tw-text-lg">
               <h2 class="tw-text-blue-600 tw-text-2xl tw-font-extrabold">Tête</h2>
             </v-card-title>
 
-            <v-card-text class="tw-text-sm" data-aos="fade-up">
+            <v-card-text class="tw-text-sm">
               <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
             </p>
             </v-card-text>
@@ -119,15 +122,16 @@
           </div>
         </v-col>
         <v-col cols="12" md="6" lg="3">
-          <div class="tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded">
+          <div class="tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded" data-aos="zoom-in-down"
+              data-aos-easing="linear" data-aos-duration="2000">
             <v-img class=""
               src="https://media.istockphoto.com/id/1188307002/photo/teeth-model-showing-an-implant-crown-bridge-model.jpg?b=1&s=170667a&w=0&k=20&c=2tpJ0TXgNZiXhty1qRs_ihoHOqyFaB3TAxHhBFyBD7I="
               aspect-ratio="1"></v-img>
-            <v-card-title class="tw-font-bold tw-text-lg" data-aos="fade-up">
+            <v-card-title class="tw-font-bold tw-text-lg">
               <h2 class="tw-text-blue-600 tw-text-2xl tw-font-extrabold">Dents</h2>
             </v-card-title>
 
-            <v-card-text class="tw-text-sm" data-aos="fade-up">
+            <v-card-text class="tw-text-sm">
               <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
             </p>
             </v-card-text>
@@ -136,15 +140,16 @@
           </div>
         </v-col>
         <v-col cols="12" md="6" lg="3">
-          <div class="tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded">
+          <div class="tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded" data-aos="zoom-in-down"
+              data-aos-easing="linear" data-aos-duration="2000">
             <v-img class=""
               src="https://img.freepik.com/free-photo/pain-toe-joint_1048-2602.jpg?w=740&t=st=1683152755~exp=1683153355~hmac=7ba7cc804a863701cf5bc02a17d2c87a8806359b4efe9dce57d3ab9333c59cf2"
               aspect-ratio="1"></v-img>
-            <v-card-title class="tw-font-bold tw-text-lg" data-aos="fade-up">
+            <v-card-title class="tw-font-bold tw-text-lg">
               <h2 class="tw-text-blue-600 tw-text-2xl tw-font-extrabold">Mains</h2>
             </v-card-title>
 
-            <v-card-text class="tw-text-sm" data-aos="fade-up">
+            <v-card-text class="tw-text-sm">
               <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
             </p>
             </v-card-text>
@@ -153,16 +158,17 @@
 
           </div>
         </v-col>
-        <v-col cols="12" md="6" lg="3">
-          <div class="tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded">
+        <v-col cols="12" md="6" lg="3" >
+          <div class="tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded" data-aos="zoom-in-down"
+              data-aos-easing="linear" data-aos-duration="2000">
             <v-img class=""
               src="https://img.freepik.com/premium-photo/close-up-hand-wear-medical-gloves-doctor-medical-gloves-holds-artificial-boneof-foot-examines-sore-leg-with-heel-spur-woman-close-up-osteophytes-heel-fascia_61243-784.jpg?w=740"
               aspect-ratio="1"></v-img>
-            <v-card-title class="tw-font-bold tw-text-lg" data-aos="fade-up">
+            <v-card-title class="tw-font-bold tw-text-lg">
               <h2 class="tw-text-blue-600 tw-text-2xl tw-font-extrabold">Pied</h2>
             </v-card-title>
 
-            <v-card-text class="tw-text-sm" data-aos="fade-up">
+            <v-card-text class="tw-text-sm">
               <p class="tw-text-justify">Interdum quisque morbi amet ut quam nunc facilisis velit. Ultrices quis elementum fringilla ut adipiscing.
             </p>
             </v-card-text>
@@ -180,7 +186,7 @@
       
         <span class="lg:tw-w-1/2 tw-justify-center tw-mb-8 tw-transform tw--translate-y-20 lg:tw-mx-78 tw-bottom-0 tw-left-0 tw-block md:tw-left-20">
           <h1
-            class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded" data-aos="fade-up">
+            class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded">
             Galerie</h1>
         </span>
 
@@ -258,7 +264,7 @@
      
         <span class="lg:tw-w-1/2 tw-justify-center tw-mb-8 tw-transform tw--translate-y-20 lg:tw-mx-78 tw-bottom-0 tw-left-0 tw-block md:tw-left-20">
           <h1
-            class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded" data-aos="fade-up">
+            class="tw-mx-1 md:tw-mx-4 tw-bg-blue-600 md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-white tw-p-4 tw-rounded">
             Actualités</h1>
         </span>
         <v-row class="tw-transform tw--translate-y-10 tw-bottom-0 tw-left-0 tw-block md:tw-left-20" data-aos="zoom-in-down"
@@ -273,7 +279,7 @@
           
           <v-card-actions>
             <nuxt-link :to="{ path: post.slug }"
-              class="tw-group tw-relative xl:tw-px-6 tw-py-2 tw-mb-4 xl:tw-py-3 tw-rounded-lg tw-shadow-2xl tw-h-12 tw-mt-4 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-blue-600 tw-border hover:tw-shadow-lg tw-overflow-hidden tw-rounded-lg tw-bg-white tw-text-lg tw-shadow-2xl">
+              class="tw-group tw-relative xl:tw-px-6 tw-px-4 tw-py-2 tw-mb-4 xl:tw-py-3 tw-rounded-lg tw-shadow-2xl tw-h-12 tw-mt-4 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-blue-600 tw-border hover:tw-shadow-lg tw-overflow-hidden tw-rounded-lg tw-bg-white tw-text-lg tw-shadow-2xl">
               <div
                 class="tw-absolute tw-inset-0 tw-w-3 tw-bg-blue-900 tw--transition-all tw-duration-[250ms] tw-ease-out group-hover:tw-w-full">
               </div>

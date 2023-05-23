@@ -33,8 +33,8 @@
                 <div class="tw-text-justify tw-mb-4" v-html="post.html" />
 
                 <v-card-actions>
-                  <nuxt-link to="/about"
-                    class="tw-group tw-relative tw-font-extrabold xl:tw-px-6 tw-py-2 tw-mb-4 xl:tw-py-3 tw-rounded-lg tw-shadow-2xl tw-h-12 tw-mt-4 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-blue-600 tw-border hover:tw-shadow-lg tw-overflow-hidden tw-rounded-lg tw-bg-white tw-text-lg tw-shadow-2xl">
+                  <nuxt-link to="/blog"
+                    class="tw-group tw-relative tw-font-extrabold xl:tw-px-6 tw-px-4 tw-py-2 tw-mb-4 xl:tw-py-3 tw-rounded-lg tw-shadow-2xl tw-h-12 tw-mt-4 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-blue-600 tw-border hover:tw-shadow-lg tw-overflow-hidden tw-rounded-lg tw-bg-white tw-text-lg tw-shadow-2xl">
                     <div
                       class="tw-absolute tw-inset-0 tw-w-5 tw-bg-blue-600 tw--transition-all tw-duration-[250ms] tw-ease-out group-hover:tw-w-full">
                     </div>

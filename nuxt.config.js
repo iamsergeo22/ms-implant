@@ -44,6 +44,15 @@ export default {
     '@nuxtjs/google-fonts',
   ],
 
+  // Vue I18n configuration
+  vueI18n: {
+    fallbackLocale: 'fr',
+    messages: {
+      fr: require('./locales/fr.json'),
+      en: require('./locales/en.json')
+    }
+  },
+
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
