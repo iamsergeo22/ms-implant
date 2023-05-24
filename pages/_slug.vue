@@ -27,7 +27,7 @@
 
                 <h1 class="lg:tw-text-3xl tw-text-2xl tw-pt-4 tw-font-extrabold tw-text-blue-600">{{ post.title }}</h1>
                 <v-list-item-subtitle class="tw-mt-2 tw-text-lg tw-font-extrabold tw-text-blue-600">
-                  {{ new Date(post.created_at).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) }}
+                  {{ new Date(post.created_at).toLocaleDateString('fr-FR', {year: 'numeric', month: 'short', day: 'numeric'}) }}
                 </v-list-item-subtitle>
 
                 <div class="tw-text-justify tw-mb-4" v-html="post.html" />

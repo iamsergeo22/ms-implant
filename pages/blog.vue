@@ -25,7 +25,7 @@
     <v-row class="tw-p-6 tw-pt-3 tw-bg-gray-300">
       <v-col cols="12" md="8" class="">
         <v-card v-for="(post, index) in posts" :key="index" class="tw-mb-6" data-aos="zoom-in-down"
-              data-aos-easing="linear" data-aos-duration="2000">
+              >
           <v-img :src="post.feature_image" height="400px" class="tw-rounded-lg tw-shadow-2xl"></v-img>
           <p class="tw-mt-4 tw-px-3 tw-text-2xl tw-font-extrabold tw-text-blue-600">{{ post.title }}</p>
           <v-list-item-subtitle class="tw-mt-2 tw-px-4 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ new Date(post.created_at).toLocaleDateString('fr-FR', {year: 'numeric', month: 'short', day: 'numeric'}) }}</v-list-item-subtitle>
@@ -58,12 +58,12 @@
           <v-card-text>
             <v-list>
               <v-list-item v-for="(recentPost, index) in recentPosts" :key="index" data-aos="zoom-in-up"
-              data-aos-easing="linear" data-aos-duration="2000">
+              >
                 <v-list-item-content>
                   <nuxt-link :to="{ path: recentPost.slug }">
                     <v-img :src="recentPost.feature_image" height="150px" class="tw-rounded-lg tw-shadow-2xl tw-w-1/2 tw-bg-center"></v-img>
                   <v-list-item-title class="tw-mt-3 tw-text-2xl tw-font-extrabold tw-text-blue-600">{{ recentPost.title }}</v-list-item-title>
-                  <v-list-item-subtitle class="tw-mt-3 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ new Date(recentPost.created_at).toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) }}</v-list-item-subtitle>
+                  <v-list-item-subtitle class="tw-mt-3 tw-text-lg tw-font-extrabold tw-text-blue-600">{{ new Date(recentPost.created_at).toLocaleDateString('fr-FR', {year: 'numeric', month: 'short', day: 'numeric'}) }}</v-list-item-subtitle>
                   </nuxt-link>
                 </v-list-item-content>
               </v-list-item>
@@ -71,22 +71,17 @@
           </v-card-text>
         </v-card>
 
-        <v-card class="tw-mt-4" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="2000">
+        <v-card class="tw-mt-4">
           <v-img class="tw-rounded-lg tw-shadow-2xl" 
             src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
-            width="550px" height="800px"></v-img>
+            height="800px"></v-img>
 
         </v-card>
 
-        <v-card class="tw-mt-4"
-        data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="2000">
+        <v-card class="tw-mt-4">
           <v-img class="tw-rounded-lg tw-shadow-2xl"
             src="https://img.freepik.com/premium-photo/asian-doctor-white-medical-gown-with-stethoscope-shoulders-taking-notes_2221-9757.jpg?w=740"
-            width="550px" height="800px"></v-img>
+            height="800px"></v-img>
 
         </v-card>
       </v-col>

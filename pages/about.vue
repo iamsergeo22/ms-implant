@@ -21,32 +21,32 @@
       
       <div class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-4 lg:tw-container lg:tw-p-8 tw-p-4 lg:tw-justify-center tw-items-center tw-w-full">
         <!-- History -->
-        <div class="tw-flex tw-shadow-2xl tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded tw-rounded-lg tw-bg-white tw-block tw-p-6  tw-cursor-pointer tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
+        <div class="tw-flex tw-shadow-2xl tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded tw-rounded-lg tw-bg-white tw-block tw-p-6  tw-cursor-pointer tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
           <div class="tw-bg-blue-600 tw-rounded-full tw-p-3 tw-mb-2">
             <v-icon>mdi-history</v-icon>
           </div>
-          <h3 class="tw-text-lg tw-font-extrabold tw-mb-2 tw-text-blue-600" data-aos="fade-up">Histoire</h3>
-          <p class="tw-text-sm tw-font-medium tw-text-black tw-text-justify tw-text-center tw-max-w-sm" data-aos="fade-up">
+          <h3 class="tw-text-lg tw-font-extrabold tw-mb-2 tw-text-blue-600" >Histoire</h3>
+          <p class="tw-text-sm tw-font-medium tw-text-black tw-text-justify tw-text-center tw-max-w-sm" >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus euismod felis, sit amet mattis ipsum faucibus vitae. Morbi eu justo convallis, laoreet elit vel, volutpat mauris.
           </p>
         </div>
         <!-- Achievement -->
-        <div class="tw-flex tw-shadow-2xl tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded tw-rounded-lg tw-bg-white tw-block tw-cursor-pointer tw-p-6  tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
+        <div class="tw-flex tw-shadow-2xl tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded tw-rounded-lg tw-bg-white tw-block tw-cursor-pointer tw-p-6  tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
           <div class="tw-bg-blue-600 tw-rounded-full tw-p-3 tw-mb-2">
             <v-icon>mdi-trophy-variant</v-icon>
           </div>
-          <h3 class="tw-text-lg tw-font-extrabold tw-text-blue-600 tw-mb-2" data-aos="fade-up">Réalisations</h3>
-          <p class="tw-text-sm tw-font-medium tw-text-black tw-text-center tw-max-w-sm tw-text-justify" data-aos="fade-up">
+          <h3 class="tw-text-lg tw-font-extrabold tw-text-blue-600 tw-mb-2" >Réalisations</h3>
+          <p class="tw-text-sm tw-font-medium tw-text-black tw-text-center tw-max-w-sm tw-text-justify" >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus euismod felis, sit amet mattis ipsum faucibus vitae. Morbi eu justo convallis, laoreet elit vel, volutpat mauris.
           </p>
         </div>
         <!-- Vision -->
-        <div class="tw-flex tw-shadow-2xl tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-b-14 hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded tw-rounded-lg tw-bg-white tw-block tw-cursor-pointer tw-p-6 tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
+        <div class="tw-flex tw-shadow-2xl tw-bg-white tw-shadow-2xl hover:tw-shadow-blue-600 hover:tw-shadow-blue-500 hover:tw-shadow-xl hover:tw-border-blue-500 hover:tw-ease-out  hover:tw-transition-all hover:tw-rounded tw-rounded-lg tw-bg-white tw-block tw-cursor-pointer tw-p-6 tw-flex-col tw-items-center tw-justify-center lg:tw-w-1/3">
           <div class="tw-bg-blue-600 tw-rounded-full tw-p-3 tw-mb-2">
             <v-icon>mdi-eye</v-icon>
           </div>
-          <h3 class="tw-text-lg tw-font-extrabold tw-text-blue-600 tw-mb-2" data-aos="fade-up">Vision</h3>
-          <p class="tw-text-sm tw-font-medium tw-text-black tw-text-center tw-max-w-sm tw-text-justify" data-aos="fade-up">
+          <h3 class="tw-text-lg tw-font-extrabold tw-text-blue-600 tw-mb-2" >Vision</h3>
+          <p class="tw-text-sm tw-font-medium tw-text-black tw-text-center tw-max-w-sm tw-text-justify" >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus euismod felis, sit amet mattis ipsum faucibus vitae. Morbi eu justo convallis, laoreet elit vel, volutpat mauris.
           </p>
         </div>
@@ -59,7 +59,7 @@
         <div class="tw-flex tw-flex-col tw-mb-6 tw-px-2 md:tw-px-6 lg:tw-px-10 tw-w-full">
           
           <div class="2xl:tw-px-20 tw-flex tw-justify-center tw-w-full tw-mb-20">
-            <div class="tw-grid lg:tw-grid-cols-2 tw-gap-4 lg:tw-gap-0 tw-w-full tw-h-full" data-aos="flip-down">
+            <div class="tw-grid lg:tw-grid-cols-2 tw-gap-4 lg:tw-gap-0 tw-w-full tw-h-full">
               
               <div 
                    class=" tw-h-full tw-bg-white tw-block tw-cursor-pointer tw-w-full tw-shadow-sm tw-shadow-indigo-100">
@@ -126,9 +126,9 @@
 
     <section class="tw-w-full">
       <div class="tw-bg-white tw-p-12">
-      <h1 class="tw-text-blue-600 tw-text-center tw-font-extrabold tw-text-2xl" data-aos="fade-up">Qui Sommes Nous?</h1>
-      <p class="tw-text-center tw-text-gray-800 tw-text-md tw-lowercase" data-aos="fade-up">UNE SOCIÉTÉ RÉCENTE, UNE EXPÉRIENCE PROBANTE EVOLUTIS</p>
-      <div class="tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center tw-mt-4" data-aos="fade-right">
+      <h1 class="tw-text-blue-600 tw-text-center tw-font-extrabold tw-text-2xl" >Qui Sommes Nous?</h1>
+      <p class="tw-text-center tw-text-gray-800 tw-text-md tw-lowercase" >UNE SOCIÉTÉ RÉCENTE, UNE EXPÉRIENCE PROBANTE EVOLUTIS</p>
+      <div class="tw-w-full tw-h-full tw-flex tw-items-center tw-justify-center tw-mt-4">
         <div class="lg:tw-w-3/4 tw-w-full tw-h-72 tw-relative lg:tw-pt-56">
       <iframe class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-shadow-2xl tw-rounded" src="https://www.youtube.com/embed/jh5U5BnpGN8" frameborder="0" allowfullscreen></iframe>
     </div>
