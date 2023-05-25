@@ -14,7 +14,7 @@
       <v-breadcrumbs :items="breadcrumbItems" divider="/" class="tw-text-lg tw-font-extrabold"></v-breadcrumbs>
     </div>
 
-    <div class="tw-bg-gray-300">
+    <div class="tw-bg-white">
       <div class="markdown-body">
         <v-container>
           <v-row>

@@ -18,7 +18,7 @@
     <div class=" tw-pt-4">
 
       <h1 class="tw-text-blue-900 tw-text-center tw-font-black tw-text-2xl" >Les Categories de Produits</h1>
-      <p class="tw-text-center tw-text-gray-800 tw-text-md tw-lowercase" >
+      <p class="tw-text-center tw-text-gray-800 tw-px-4 tw-text-md tw-lowercase" >
         Voici nos incroyable categories de produit qui révolutionne le marché!
       </p>
 

@@ -2,8 +2,8 @@ import GhostContentAPI from "@tryghost/content-api";
 
 // Create API instance with site credentials
 const api = new GhostContentAPI({
-  url: 'https://lekipising-tech.ghost.io',
-  key: 'b48652c81a1590fe0980a32d2c',
+  url: 'https://ms-implant.ghost.io',
+  key: '4447e7e7040c516d0b48a3ff63',
   version: "v5.0"
 });
 
