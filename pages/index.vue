@@ -9,14 +9,16 @@
       </v-carousel>
 
       <v-carousel class="lg:tw-hidden tw-black" v-model="model" cycle :show-arrows="false" hide-delimiter-background>
-        <v-carousel-item class="tw-w-full tw-h-full" v-for="(photo,i) in photos" :key="i" :src="photo.src" cover></v-carousel-item>
+        <v-carousel-item class="tw-w-full tw-h-full" v-for="(photo,i) in photos" :key="i" cover>
+        <img class="tw-w-full tw-h-full" :src="photo.src"  alt="">
+        </v-carousel-item>
       </v-carousel>
 
 
     </div>
 
     <span
-      class="lg:tw-w-1/2 tw-transform tw--translate-y-10 tw-bottom-0 tw-left-0 tw-block md:tw-left-20 -tw-bottom-10 tw-mb-4">
+      class="lg:tw-w-1/2 tw-transform lg:tw--translate-y-10 tw--translate-y-10 tw-bottom-0 tw-left-0 tw-block md:tw-left-20 lg:-tw-bottom-10 lg:tw-mb-4">
       <h1
         class="tw-mx-1 md:tw-mx-4 tw-bg-white md:tw-px-4 lg:tw-px-4 tw-shadow-md tw-shadow-gray-500 tw-font-extrabold lg:tw-font-bold tw-text-2xl tw-text-center tw-uppercase md:tw-text-center lg:tw-text-4xl tw-w-3/4 tw-text-blue-900 tw-p-4 tw-rounded"
         data-aos="fade-up">
@@ -557,6 +559,7 @@ import Paterns from '../components/Paterns.vue';
     data() {
       return {
         show: false,
+        model: "",
         items: [{
             src: 'https://imagedash.ova-africa.com/_nuxt/img/Header2.ffb6709.png',
           },
@@ -573,16 +576,16 @@ import Paterns from '../components/Paterns.vue';
         ],
 
         photos: [{
-            src: 'https://imagedash.ova-africa.com/_nuxt/img/Header2.ffb6709.png',
+            src: 'https://imagedash.ova-africa.com/_nuxt/img/iPhone3.b252746.png',
           },
           {
-            src: 'https://imagedash.ova-africa.com/_nuxt/img/Header4.68f1a8a.png',
+            src: 'https://imagedash.ova-africa.com/_nuxt/img/iPhone.341923a.png',
           },
           {
-            src: 'https://imagedash.ova-africa.com/_nuxt/img/Header1.56db328.png',
+            src: 'https://imagedash.ova-africa.com/_nuxt/img/iPhone4.21d5d2b.png',
           },
           {
-            src: 'https://imagedash.ova-africa.com/_nuxt/img/Header3.e3c1fb0.png',
+            src: 'https://imagedash.ova-africa.com/_nuxt/img/iPhone2.62c71f8.png',
           },
           
         ],
