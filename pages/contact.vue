@@ -68,15 +68,15 @@
             </div>
 
             <v-card-actions>
-            <nuxt-link to="/about"
-              class="tw-group tw-relative tw-font-extrabold xl:tw-px-6 tw-px-4 tw-mb-4 tw-pt-2.5 tw-rounded-lg tw-shadow-2xl tw-h-12 tw-mt-3 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-blue-600 tw-border hover:tw-shadow-lg tw-overflow-hidden tw-rounded-lg tw-bg-blue-600 tw-text-white tw-text-lg tw-shadow-2xl">
+            <button
+              class="tw-group tw-relative tw-font-extrabold xl:tw-px-6 tw-text-center tw-px-4 tw-mb-4 tw-rounded-lg tw-shadow-2xl tw-h-12 tw-mt-2 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-blue-600 tw-border hover:tw-shadow-lg tw-overflow-hidden tw-rounded-lg tw-bg-blue-600 tw-text-white tw-text-lg tw-shadow-2xl">
               <div
                 class="tw-absolute tw-inset-0 tw-w-0 tw-bg-blue-900 tw--transition-all tw-duration-[250ms] tw-ease-out group-hover:tw-w-full">
               </div>
               <span class="tw-relative tw-inline-flex tw-items-center tw-gap-2 tw-text-white group-hover:tw-text-white">
                 Envoyer
               </span>
-            </nuxt-link>
+            </button>
           </v-card-actions>
           </form>
         </div>
